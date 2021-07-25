@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="page__header">
+    <img class="header__logo" src="blank.png" alt="логотип Кэт энерджи">
+    <nav class="header__site-navigation">
+      <button class="site-navigation__toggle"><span class="visually-hidden">Открыть меню</span></button>
+      <a class="site-navigation__item" href="index.html">Главная</a>
+      <a class="site-navigation__item" href="catalog.html">Каталог продукции</a>
+      <a class="site-navigation__item" href="form.html">Подбор программы</a>
+    </nav>
+  </header>
+  <main class="page__main">
+    <div class="description">
+    <h1 class="description__header">Подбор программы</h1>
+    <p class="description__paragraph">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    </div>
+    <form class="scheme-form" action="https://echo.htmlacademy.ru/courses" method="post">
+      <fieldset class="scheme-form-cat">
+        <p class="scheme-form-text scheme-form-cat__name">Имя:*</p><input class="scheme-form-cat__name-input" type="text" name="name" value="Барсик">
+        <p class="scheme-form-text scheme-form-cat__weight">Вес (Кг):* </p><input class="scheme-form-cat__weight-input" type="number" name="weight" value="7">
+        <p class="scheme-form-text scheme-form-cat__age">Возраст (лет):</p><input class="scheme-form-cat__age-input" type="number" name="age" value="7">
+      </fieldset>
+      <fieldset class="scheme-form-var">
+        <input class="scheme-form-var__radio" type="radio" name="scheme" value="slim" checked>
+        <label class="scheme-form-var__label-text" for="slim">Похудение</label>
+        <input class="scheme-form-var__radio" type="radio" name="scheme" value="pro">
+        <label class="scheme-form-var__label-text" for="pro">Набор массы</label>
+        <input class="scheme-form-var__radio" type="radio" name="scheme" value="suggestion">
+        <label class="scheme-form-var__label-text" for="suggestion">Не знаю (Нужен ваш совет)</label>
+      </fieldset>
+      <fieldset class="scheme-form-contacts">
+        <legend class="scheme-form-contacts__legend">Контактные данные (владельца кота)</legend>
+        <p class="scheme-form-contacts__email">E-mail:*</p>
+        <input class="scheme-form-contacts__email-input" type="email" name="email" value="kuklachev@gmail.com">
+        <p class="scheme-form-contacts__tel">Телефон:*</p>
+        <input class="scheme-form-contacts__tel-input" type="tel" name="phone" value="8 (960) 900-60-90">
+      </fieldset>
+      <fieldset class="scheme-form-comment">
+        <legend class="scheme-form-comment__legend">Комментарий</legend>
+        <textarea class="scheme-form-comment__text" name="comment" cols="30" rows="10">Расскажите обо всех повАдках кота</textarea>
+      </fieldset>
+      <fieldset class="scheme-form-spec">
+        <legend class="scheme-form-spec__legend">Дополнительно</legend>
+        <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="non-sugar">
+        <label class="scheme-form-spec__label" for="non-sugar">Сахароpаменитель</label>
+        <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="water">
+        <label class="scheme-form-spec__label" for="water">Питьевая вода</label>
+        <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="milk">
+        <label class="scheme-form-spec__label" for="milk">Молоко</label>
+        <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="vitamins">
+        <label class="scheme-form-spec__label" for="vitamins">Витамины</label>
+      </fieldset>
+      <button class="scheme-form-button" type="submit">Отправить заявку</button>
+      <p>* — Обязательные поля</p>
+    </form>
+  </main>
+  <footer class="page__footer">
+    <section class="wrapper contacts-section">
+      <h2 class="contacts-section__header">Приглашаем к сотрудничеству дилеров!</h2>
+      <p class="contacts-section__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <img class="contacts-section__map-imafe" src="blank.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <!-- <iframe class="contacts-section__interactive-map"> -->
+    </section>
+    <section class="wrapper social-footer">
+      <h2 class="visiually-hidden">Мы в социальных сетях:</h2>
+      <a class="social-footer__logo-img" href="#nowhere">
+        <img src="blank.png" alt="Кэт энерджи">
+      </a>
+      <div class="social-footer__wrapper">
+        <a class="social-footer__link vk-logo" href="vk.com"></a>
+        <a class="social-footer__link insta-logo" href="instagramm.com"></a>
+        <a class="social-footer__link face-logo" href="facebook.com"></a>
+      </div>
+      <div class="social-footer__html-academy-wrapper">
+        <a class="social-footer__html-academy-logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      </div>
+    </section>
+  </footer>
+</body>
