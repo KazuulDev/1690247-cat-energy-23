@@ -28,12 +28,12 @@
         <p class="scheme-form-text scheme-form-cat__age">Возраст (лет):</p><input class="scheme-form-cat__age-input" type="number" name="age" value="7">
       </fieldset>
       <fieldset class="scheme-form-var">
-        <input class="scheme-form-var__radio" type="radio" name="scheme" value="slim" checked>
-        <label class="scheme-form-var__label-text" for="slim">Похудение</label>
-        <input class="scheme-form-var__radio" type="radio" name="scheme" value="pro">
-        <label class="scheme-form-var__label-text" for="pro">Набор массы</label>
-        <input class="scheme-form-var__radio" type="radio" name="scheme" value="suggestion">
-        <label class="scheme-form-var__label-text" for="suggestion">Не знаю (Нужен ваш совет)</label>
+        <input class="scheme-form-var__radio" type="radio" name="scheme" value="slim" id="slim-radio" checked>
+        <label class="scheme-form-var__label-text" for="slim-radio">Похудение</label>
+        <input class="scheme-form-var__radio" type="radio" name="scheme" value="pro" id="pro-radio">
+        <label class="scheme-form-var__label-text" for="pro-radio">Набор массы</label>
+        <input class="scheme-form-var__radio" type="radio" name="scheme" value="suggestion" id="suggestion-radio">
+        <label class="scheme-form-var__label-text" for="suggestion-radio">Не знаю (Нужен ваш совет)</label>
       </fieldset>
       <fieldset class="scheme-form-contacts">
         <legend class="scheme-form-contacts__legend">Контактные данные (владельца кота)</legend>
@@ -48,14 +48,14 @@
       </fieldset>
       <fieldset class="scheme-form-spec">
         <legend class="scheme-form-spec__legend">Дополнительно</legend>
-        <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="non-sugar">
-        <label class="scheme-form-spec__label" for="non-sugar">Сахароpаменитель</label>
-        <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="water">
-        <label class="scheme-form-spec__label" for="water">Питьевая вода</label>
-        <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="milk">
-        <label class="scheme-form-spec__label" for="milk">Молоко</label>
-        <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="vitamins">
-        <label class="scheme-form-spec__label" for="vitamins">Витамины</label>
+        <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="non-sugar" id="non-sugar-check">
+        <label class="scheme-form-spec__label" for="non-sugar-check">Сахароpаменитель</label>
+        <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="water" id="water-check">
+        <label class="scheme-form-spec__label" for="water-check">Питьевая вода</label>
+        <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="milk" id="milk-check">
+        <label class="scheme-form-spec__label" for="milk-check">Молоко</label>
+        <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="vitamins" id="vitamins-check">
+        <label class="scheme-form-spec__label" for="vitamins-check">Витамины</label>
       </fieldset>
       <button class="scheme-form-button" type="submit">Отправить заявку</button>
       <p>* — Обязательные поля</p>
