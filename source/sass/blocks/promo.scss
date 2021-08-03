@@ -1,4 +1,19 @@
 .promo {
   background-color: $promo-transparent;
-  height: 480px;
+}
+
+.promo__header-text {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo__paragraph-text {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
 }
