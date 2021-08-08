@@ -1,9 +1,11 @@
+@import "./global/viewports.scss";
 @import "./global/fonts.scss";
 @import "./global/colors.scss";
 @import "./blocks/page.scss";
 @import "./blocks/promo.scss";
 @import "./global/visually-hidden.scss";
-@import "./global/viewports.scss";
+@import "./global/wrapper.scss";
+@import "./blocks/catalog-list.scss";
 @import "./blocks/page-header.scss";
 @import "./global/button.scss";
 @import "./blocks/site-navigation.scss";
