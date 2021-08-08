@@ -1,3 +1,74 @@
+.food-variants {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .food-variants {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-variants {
+    flex-direction: row;
+  }
+}
+
+.food-variants__img--slim::before {
+  content: "";
+  display: block;
+  float: left;
+  width: 50px;
+  height: 53px;
+  background-image: url("../../img/slim-img.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.food-variants__img--pro::before {
+  content: "";
+  display: block;
+  float: left;
+  width: 67px;
+  height: 50px;
+  background-image: url("../../img/pro-img.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .food-variants__img--slim::before {
+    float: right;
+    width: 200px;
+    height: 211px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-variants__img--slim::before {
+    float: left;
+    width: 100px;
+    height: 106px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .food-variants__img--pro::before {
+    float: right;
+    width: 268px;
+    height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-variants__img--pro::before {
+    float: left;
+    width: 134px;
+    height: 100px;
+  }
+}
+
 .food-variants__header {
   font-family: "Oswald", sans-serif;
   font-style: normal;
