@@ -9,11 +9,13 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header wrapper">
-    <img class="page-header__logo cat-logo" src="blank.png" alt="логотип Кэт энерджи">
+  <header class="page__leveler page__header">
+    <img class="page-header__logo cat-logo" src="img/logo-mobile.svg" alt="логотип Кэт энерджи" width="33" height="37">
+    <img class="page-header__text text-logo" src="img/logo-text.svg" alt="текстовая часть логотипа" width="101"
+      height="18">
     <nav class="site-navigation">
       <button class="site-navigation__toggle">
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="page__visually-hidden">Открыть меню</span>
       </button>
       <a class="site-navigation__item" href="index.html">Главная</a>
       <a class="site-navigation__item" href="catalog.html">Каталог продукции</a>
@@ -21,9 +23,9 @@
     </nav>
   </header>
   <main class="page__main">
-    <section class="catalog-list wrapper">
-      <h1 class="catalog-list__header section-header">Каталог продукции</h1>
-      <div class="primary-list">
+    <section class="page__leveler">
+      <h1 class="section-header">Каталог продукции</h1>
+      <div class="catalog-list">
         <div class="catalog-list__item catalog-item">
           <img class="catalog-item__img" src="blank.png" alt="Cat Energy PRO 500 г(Курица)">
           <p class="catalog-item__name item-name">Cat Energy PRO 500 г</p>
@@ -166,18 +168,18 @@
         </div>
       </div>
     </section>
-    <div class="wrapper other-items-wrapper">
+    <div class="secondary-list page__leveler ">
       <section class="special-list">
         <h2 class="special-list__header">Дополнительные товары</h2>
         <div class="special-item">
           <p class="special-item__name item-name">Сахарозаменитель</p>
           <dl>
             <div class="special-item__cost-dl">
-              <dt class="special-item__cost-var visually-hidden">Тара</dt>
+              <dt class="special-item__cost-var page__visually-hidden">Тара</dt>
               <dd class="special-item__cost-description">1 упаковка (100 г)</dd>
             </div>
             <div class="special-item__cost-dl">
-              <dt class="special-item__cost-var visually-hidden">Цена</dt>
+              <dt class="special-item__cost-var page__visually-hidden">Цена</dt>
               <dd class="special-item__cost-description">200 Р.</dd>
             </div>
           </dl>
@@ -187,11 +189,11 @@
           <p class="special-item__name item-name">Питьевая вода</p>
           <dl>
           <div class="special-item__cost-dl">
-            <dt class="special-item__cost-var visually-hidden">Тара</dt>
+            <dt class="special-item__cost-var page__visually-hidden">Тара</dt>
             <dd class="special-item__cost-description">5 литров</dd>
           </div>
           <div class="special-item__cost-dl">
-            <dt class="special-item__cost-var visually-hidden">Цена</dt>
+            <dt class="special-item__cost-var page__visually-hidden">Цена</dt>
             <dd class="special-item__cost-description">50 Р.</dd>
           </div>
           </dl>
@@ -201,11 +203,11 @@
           <p class="special-item__name item-name">Молоко</p>
           <dl>
             <div class="special-item__cost-dl">
-              <dt class="special-item__cost-var visually-hidden">Тара</dt>
+              <dt class="special-item__cost-var page__visually-hidden">Тара</dt>
               <dd class="special-item__cost-description">1 литр</dd>
             </div>
             <div class="special-item__cost-dl">
-              <dt class="special-item__cost-var visually-hidden">Цена</dt>
+              <dt class="special-item__cost-var page__visually-hidden">Цена</dt>
               <dd class="special-item__cost-description">100 Р.</dd>
             </div>
           </dl>
@@ -215,19 +217,19 @@
           <p class="special-item__name item-name">Витамины</p>
           <dl>
             <div class="special-item__cost-dl">
-              <dt class="special-item__cost-var visually-hidden">Тара</dt>
+              <dt class="special-item__cost-var page__visually-hidden">Тара</dt>
               <dd class="special-item__cost-description">1 упаковка (30 г)</dd>
             </div>
             <div class="special-item__cost-dl">
-              <dt class="special-item__cost-var visually-hidden">Цена</dt>
+              <dt class="special-item__cost-var page__visually-hidden">Цена</dt>
               <dd class="special-item__cost-description">300 Р.</dd>
             </div>
           </dl>
           <button class="special-item__add-to-cart button" type="button">Заказать</button>
         </div>
       </section>
-      <section class="wrapper promo-present">
-        <h2 class="visually-hidden">Промоакция</h2>
+      <section class="promo-present">
+        <h2 class="page__visually-hidden">Промоакция</h2>
         <div class="promo-present__container">
           <p class="promo-present__text">Закажите все и получите чехол для кота в подарок!</p>
         </div>
@@ -235,14 +237,14 @@
     </div>
   </main>
   <footer class="page__footer">
-    <section class="wrapper contacts-section">
+    <section class="page__leveler contacts-section">
       <h2 class="contacts-section__header">Приглашаем к сотрудничеству дилеров!</h2>
       <p class="contacts-section__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       <img class="contacts-section__map-imafe" src="blank.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       <!-- <iframe class="contacts-section__interactive-map"> -->
     </section>
-    <section class="wrapper social-footer">
-      <h2 class="visually-hidden">Мы в социальных сетях:</h2>
+    <section class="page__leveler social-footer">
+      <h2 class="page__visually-hidden">Мы в социальных сетях:</h2>
       <a class="social-footer__logo-img cat-logo" href="#nowhere">
         <img src="blank.png" alt="Кэт энерджи">
       </a>

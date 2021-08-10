@@ -8,19 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
-<body class="page__body">
-  <header class="page-header wrapper">
-    <img class="page-header__logo cat-logo" src="blank.png" alt="логотип Кэт энерджи">
-    <nav class="site-navigation">
-      <button class="site-navigation__toggle">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <a class="site-navigation__item" href="index.html">Главная</a>
-      <a class="site-navigation__item" href="catalog.html">Каталог продукции</a>
-      <a class="site-navigation__item" href="form.html">Подбор программы</a>
-    </nav>
-  </header>
-  <main class="page__main">
+  <body class="page__body">
+    <header class="page__leveler page__header">
+      <img class="page-header__logo cat-logo" src="img/logo-mobile.svg" alt="логотип Кэт энерджи" width="33" height="37">
+      <img class="page-header__text text-logo" src="img/logo-text.svg" alt="текстовая часть логотипа" width="101" height="18">
+      <nav class="site-navigation">
+        <button class="site-navigation__toggle">
+          <span class="page__visually-hidden">Открыть меню</span>
+        </button>
+        <a class="site-navigation__item" href="index.html">Главная</a>
+        <a class="site-navigation__item" href="catalog.html">Каталог продукции</a>
+        <a class="site-navigation__item" href="form.html">Подбор программы</a>
+      </nav>
+    </header>
+  <main class="page__main page__leveler">
     <div class="description">
     <h1 class="description__header section-header">Подбор программы</h1>
     <p class="description__paragraph">Заполните анкету, и мы подберем программу питания для вашего кота</p>
@@ -66,14 +67,14 @@
     </form>
   </main>
   <footer class="page__footer">
-    <section class="wrapper contacts-section">
+    <section class="page__leveler contacts-section">
       <h2 class="contacts-section__header">Приглашаем к сотрудничеству дилеров!</h2>
       <p class="contacts-section__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       <img class="contacts-section__map-imafe" src="blank.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       <!-- <iframe class="contacts-section__interactive-map"> -->
     </section>
-    <section class="wrapper social-footer">
-      <h2 class="visually-hidden">Мы в социальных сетях:</h2>
+    <section class="social-footer">
+      <h2 class="page__visually-hidden">Мы в социальных сетях:</h2>
       <a class="social-footer__logo-img cat-logo" href="#nowhere">
         <img src="blank.png" alt="Кэт энерджи">
       </a>

@@ -9,12 +9,12 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header wrapper">
+  <header class="page__leveler page__header">
     <img class="page-header__logo cat-logo" src="img/logo-mobile.svg" alt="логотип Кэт энерджи" width="33" height="37">
     <img class="page-header__text text-logo" src="img/logo-text.svg" alt="текстовая часть логотипа" width="101" height="18">
     <nav class="site-navigation">
       <button class="site-navigation__toggle">
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="page__visually-hidden">Открыть меню</span>
       </button>
       <a class="site-navigation__item" href="index.html">Главная</a>
       <a class="site-navigation__item" href="catalog.html">Каталог продукции</a>
@@ -22,13 +22,15 @@
     </nav>
   </header>
   <main class="page__main">
-    <section class="wrapper promo">
+    <section class="promo">
+      <div class="page__leveler">
       <h1 class="promo__header-text">Функциональное питание для котов</h1>
       <p class="promo__paragraph-text">Занялся собой? Займись котом!</p>
       <!-- банка подозреваю - фон -->
       <a class="promo__button button" href="form.html">Подобрать программу</a>
+    </div>
     </section>
-    <section class="wrapper food-variants">
+    <section class="page__leveler food-variants">
       <div class="food-variants__item food-variants__img--slim">
         <h2 class="food-variants__header">Похудение</h2>
         <p class="food-variants__description section-text">Ваш кот весит больше собаки и почти утратил способность
@@ -44,7 +46,7 @@
         <a class="food-variants__link" href="catalog.html">Каталог Pro</a>
       </div>
     </section>
-    <section class="wrapper food-advantages">
+    <section class="page__leveler food-advantages">
       <h2 class="food-advantages__header section-header">Как это работает</h2>
       <ol class="food-advantages__list">
         <li class="food-advantages__item section-text eco">Функциональное питание содержит только полезные питательные
@@ -57,7 +59,8 @@
           питомца!</li>
       </ol>
     </section>
-    <section class="wrapper food-effect">
+    <section class="food-effect">
+      <div class="page__leveler">
       <h2 class="food-effect__header section-header">Живой пример</h2>
       <p class="food-effect__description section-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
         на Cat Energy
@@ -74,24 +77,25 @@
       <p class="food-effect__cost">Затраты на питание: 15 000 руб.</p>
       <div class="food-effect-slider">
         <img class="food-effect-slider__image" src="blank.png" alt="Было">
-        <img class="food-effect-slider__image visually-hidden" src="blank.png" alt="Стало">
+        <img class="food-effect-slider__image page__visually-hidden" src="blank.png" alt="Стало">
         <div class="food-effect-slider__slider-switcher">
           <!-- переключатель было/стало -->
           <span class="food-effect-slider__var">Было</span>
           <span class="food-effect-slider__var">Стало</span>
         </div>
       </div>
+    </div>
     </section>
   </main>
   <footer class="page__footer">
-    <section class="wrapper contacts-section">
+    <section class="page__leveler contacts-section">
       <h2 class="contacts-section__header">Приглашаем к сотрудничеству дилеров!</h2>
       <p class="contacts-section__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       <img class="contacts-section__map-imafe" src="blank.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       <!-- <iframe class="contacts-section__interactive-map"> -->
     </section>
-    <section class="wrapper social-footer">
-      <h2 class="visually-hidden">Мы в социальных сетях:</h2>
+    <section class="social-footer">
+      <h2 class="page__visually-hidden">Мы в социальных сетях:</h2>
       <a class="social-footer__logo-img cat-logo" href="#nowhere">
         <img src="blank.png" alt="Кэт энерджи">
       </a>

@@ -1,18 +1,16 @@
-.catalog-list {
+.secondary-list {
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: $tablet-width) {
-  .catalog-list {
+  .secondary-list {
     flex-direction: row;
-    flex-wrap: wrap;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .catalog-list {
+  .secondary-list {
     flex-direction: row;
-    flex-wrap: wrap;
   }
 }

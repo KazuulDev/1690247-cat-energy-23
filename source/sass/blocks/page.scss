@@ -16,3 +16,31 @@
     max-width: 1160px;
   }
 }
+
+.page__footer {
+  background-color: $basic-grey;
+}
+
+.page__visually-hidden {
+  position: absolute;
+  transform: scale(0);
+}
+
+.page__leveler {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page__leveler {
+    width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__leveler {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
