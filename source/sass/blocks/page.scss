@@ -2,24 +2,6 @@
   margin: 0;
 }
 
-.page__body {
-  background-color: $background-main;
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .page__body {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page__body {
-    max-width: 1160px;
-  }
-}
 
 .page__footer {
   background-color: $basic-grey;
