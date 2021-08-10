@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Кэт энерджи. Форма.</title>
-    <link href="./css/style.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Кэт энерджи. Форма.</title>
+  <link href="./css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-  <body class="page__body">
-    <header class="page__leveler page__header">
-      <img class="page-header__logo cat-logo" src="img/logo-mobile.svg" alt="логотип Кэт энерджи" width="33" height="37">
-      <img class="page-header__text text-logo" src="img/logo-text.svg" alt="текстовая часть логотипа" width="101" height="18">
-      <nav class="site-navigation">
-        <button class="site-navigation__toggle">
-          <span class="page__visually-hidden">Открыть меню</span>
-        </button>
-        <a class="site-navigation__item" href="index.html">Главная</a>
-        <a class="site-navigation__item" href="catalog.html">Каталог продукции</a>
-        <a class="site-navigation__item" href="form.html">Подбор программы</a>
-      </nav>
-    </header>
+<body class="page__body">
+  <header class="page__leveler page__header">
+    <img class="page-header__logo cat-logo" src="img/logo-mobile.svg" alt="логотип Кэт энерджи" width="33" height="37">
+    <img class="page-header__text text-logo" src="img/logo-text.svg" alt="текстовая часть логотипа" width="101"
+      height="18">
+    <nav class="site-navigation">
+      <button class="site-navigation__toggle">
+        <span class="page__visually-hidden">Открыть меню</span>
+      </button>
+      <a class="site-navigation__item" href="index.html">Главная</a>
+      <a class="site-navigation__item" href="catalog.html">Каталог продукции</a>
+      <a class="site-navigation__item" href="form.html">Подбор программы</a>
+    </nav>
+  </header>
   <main class="page__main page__leveler">
     <div class="description">
-    <h1 class="description__header section-header">Подбор программы</h1>
-    <p class="description__paragraph">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <h1 class="description__header section-header">Подбор программы</h1>
+      <p class="description__paragraph">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
     <form class="scheme-form" action="https://echo.htmlacademy.ru/courses" method="post">
-      <fieldset class="scheme-form-cat">
-        <p class="scheme-form-text scheme-form-cat__name">Имя:*</p><input class="scheme-form-cat__name-input scheme-form-text" type="text" name="name" value="Барсик">
-        <p class="scheme-form-text scheme-form-cat__weight">Вес (Кг):* </p><input class="scheme-form-cat__weight-input scheme-form-text" type="number" name="weight" value="7">
-        <p class="scheme-form-text scheme-form-cat__age">Возраст (лет):</p><input class="scheme-form-cat__age-input scheme-form-text" type="number" name="age" value="7">
-      </fieldset>
-      <fieldset class="scheme-form-var">
-        <input class="scheme-form-var__radio" type="radio" name="scheme" value="slim" id="slim-radio" checked>
-        <label class="scheme-form-var__label-text" for="slim-radio">Похудение</label>
-        <input class="scheme-form-var__radio" type="radio" name="scheme" value="pro" id="pro-radio">
-        <label class="scheme-form-var__label-text" for="pro-radio">Набор массы</label>
-        <input class="scheme-form-var__radio" type="radio" name="scheme" value="suggestion" id="suggestion-radio">
-        <label class="scheme-form-var__label-text" for="suggestion-radio">Не знаю (Нужен ваш совет)</label>
-      </fieldset>
+      <div class="cat-info">
+        <fieldset class="scheme-form-cat">
+          <p class="scheme-form-text scheme-form-cat__name">Имя:*</p><input
+            class="scheme-form-cat__name-input scheme-form-text" type="text" name="name" value="Барсик" required>
+          <p class="scheme-form-text scheme-form-cat__weight">Вес (Кг):* </p><input
+            class="scheme-form-cat__weight-input scheme-form-text" type="number" name="weight" value="7" required>
+          <p class="scheme-form-text scheme-form-cat__age">Возраст (лет):</p><input
+            class="scheme-form-cat__age-input scheme-form-text" type="number" name="age" value="7">
+        </fieldset>
+        <fieldset class="scheme-form-var">
+          <input class="scheme-form-var__radio" type="radio" name="scheme" value="slim" id="slim-radio" checked>
+          <label class="scheme-form-var__label-text" for="slim-radio">Похудение</label>
+          <input class="scheme-form-var__radio" type="radio" name="scheme" value="pro" id="pro-radio">
+          <label class="scheme-form-var__label-text" for="pro-radio">Набор массы</label>
+          <input class="scheme-form-var__radio" type="radio" name="scheme" value="suggestion" id="suggestion-radio">
+          <label class="scheme-form-var__label-text" for="suggestion-radio">Не знаю (Нужен ваш совет)</label>
+        </fieldset>
+      </div>
       <fieldset class="scheme-form-contacts">
         <legend class="scheme-form-contacts__legend legend-text">Контактные данные (владельца кота)</legend>
         <p class="scheme-form-contacts__email scheme-form-text">E-mail:*</p>
-        <input class="scheme-form-contacts__email-input scheme-form-text" type="email" name="email" value="kuklachev@gmail.com">
+        <input class="scheme-form-contacts__email-input scheme-form-text" type="email" name="email"
+          value="kuklachev@gmail.com" required>
         <p class="scheme-form-contacts__tel scheme-form-text">Телефон:*</p>
-        <input class="scheme-form-contacts__tel-input scheme-form-text" type="tel" name="phone" value="8 (960) 900-60-90">
+        <input class="scheme-form-contacts__tel-input scheme-form-text" type="tel" name="phone"
+          value="8 (960) 900-60-90">
       </fieldset>
       <fieldset class="scheme-form-comment">
         <legend class="scheme-form-comment__legend legend-text">Комментарий</legend>
-        <textarea class="scheme-form-comment__text scheme-form-text" name="comment" cols="30" rows="10">Расскажите обо всех повАдках кота</textarea>
+        <textarea class="scheme-form-comment__text scheme-form-text" name="comment" cols="30"
+          rows="10">Расскажите обо всех повадках кота</textarea>
       </fieldset>
       <fieldset class="scheme-form-spec">
         <legend class="scheme-form-spec__legend legend-text">Дополнительно</legend>
@@ -62,8 +71,10 @@
         <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="vitamins" id="vitamins-check">
         <label class="scheme-form-spec__label" for="vitamins-check">Витамины</label>
       </fieldset>
-      <button class="scheme-form-button button" type="submit">Отправить заявку</button>
-      <p class="required-text">* — Обязательные поля</p>
+      <div class="scheme-form__end">
+        <button class="scheme-form-button button" type="submit">Отправить заявку</button>
+        <p class="scheme-form__required-text">* — Обязательные поля</p>
+      </div>
     </form>
   </main>
   <footer class="page__footer">

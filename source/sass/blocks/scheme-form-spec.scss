@@ -7,3 +7,21 @@
   text-transform: uppercase;
   color: $main-text;
 }
+
+.scheme-form-spec {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .scheme-form-spec {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .scheme-form-spec {
+    flex-direction: row;
+  }
+}

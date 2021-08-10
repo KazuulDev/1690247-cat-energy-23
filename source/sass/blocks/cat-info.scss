@@ -1,0 +1,16 @@
+.cat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .cat-info {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-info {
+    flex-direction: row;
+  }
+}

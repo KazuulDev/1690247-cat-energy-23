@@ -1,0 +1,16 @@
+.scheme-form__end {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .scheme-form__end {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .scheme-form__end {
+    flex-direction: row;
+  }
+}
