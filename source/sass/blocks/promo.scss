@@ -1,5 +1,10 @@
 .promo {
+  background-image: url("../../img/promo-cat.png");
   background-color: $promo-transparent;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  background-size: 302px, 320px;
+  background-position-x: center;
 }
 
 .promo__header-text {
