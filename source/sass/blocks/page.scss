@@ -2,6 +2,14 @@
   margin: 0;
 }
 
+.page__body {
+  margin: 0;
+}
+
+.page__header {
+  display: flex;
+  flex-direction: row;
+}
 
 .page__footer {
   background-color: $basic-grey;

@@ -1,6 +1,8 @@
 .site-navigation {
   display: flex;
   flex-direction: column;
+  position: relative;
+  background-color: $background-main;
 }
 
 @media (min-width: $tablet-width) {
@@ -27,4 +29,119 @@
   text-decoration: none;
   color: $main-text;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .site-navigation__item {
+    color: $background-main;
+  }
+}
+
+.site-navigation__item--current {
+  text-decoration: underline solid 2px;
+  text-underline-offset: 8px;
+}
+
+@media (min-width: $tablet-width) {
+  .site-navigation__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-navigation__toggle {
+    display: none;
+  }
+}
+
+.site-navigation__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  border: none;
+  background-color: $background-main;
+}
+
+.site-navigation .site-navigation__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 36px;
+  height: 2px;
+  background-color: $black;
+  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+}
+
+.site-navigation .site-navigation--closed {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 36px;
+    height: 2px;
+    background-color: $black;
+    z-index: 0;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+
+.site-navigation--opened .main-nav__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 36px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $black;
+  }
 }

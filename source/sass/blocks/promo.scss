@@ -8,6 +8,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  color: $background-main;
 }
 
 .promo__paragraph-text {
@@ -16,4 +17,21 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
+  color: $background-main;
 }
+
+
+@media (min-width: $tablet-width) {
+  .promo__header-text,
+  .promo__paragraph-text {
+    color: $black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__header-text,
+  .promo__paragraph-text {
+    color: $black;
+  }
+}
+
