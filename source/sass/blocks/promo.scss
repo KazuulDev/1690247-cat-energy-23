@@ -1,10 +1,25 @@
 .promo {
-  background-image: url("../../img/promo-cat.png");
-  background-color: $promo-transparent;
+  height: 480px;
+}
+
+.promo__cat::before {
+  content: "";
+  width: 320px;
+  height: 302px;
+  background-image:
+    linear-gradient(
+      $promo-transparent,
+      $promo-transparent),
+    url("../../img/promo-cat.png");
+  background-color: #4f4f54;
   background-repeat: no-repeat;
-  background-blend-mode: luminosity;
-  background-size: 302px, 320px;
-  background-position-x: center;
+  position: absolute;
+  background-size: 100%, 320px;
+  background-position-x:
+    50%,
+    -50px,
+    50%;
+  z-index: -1;
 }
 
 .promo__header-text {
@@ -14,6 +29,8 @@
   font-size: 36px;
   line-height: 36px;
   color: $background-main;
+  text-align: center;
+  padding-top: 27px;
 }
 
 .promo__paragraph-text {
@@ -23,6 +40,8 @@
   font-size: 14px;
   line-height: 14px;
   color: $background-main;
+  text-align: center;
+  padding-top: 25px;
 }
 
 
@@ -40,3 +59,6 @@
   }
 }
 
+.promo__img {
+  padding-top: 25px;
+}

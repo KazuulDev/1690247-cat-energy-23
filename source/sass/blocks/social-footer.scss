@@ -16,3 +16,12 @@
     flex-direction: row;
   }
 }
+
+.social-footer__vk-logo {
+  content: url("../../img/icon-vkontakte.svg");
+  display: block;
+  width: 100px;
+  height: 100px;
+  color: $special-grey;
+  background-color: $black;
+}
