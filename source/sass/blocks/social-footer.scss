@@ -1,6 +1,8 @@
 .social-footer {
   display: flex;
   flex-direction: column;
+  height: auto;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -18,10 +20,70 @@
 }
 
 .social-footer__vk-logo {
-  content: url("../../img/icon-vkontakte.svg");
-  display: block;
-  width: 100px;
-  height: 100px;
+  ::before {
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 16px;
+    color: $special-grey;
+    background-image: url("../../img/icon-vkontakte.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+  }
+}
+
+.social-footer__insta-logo::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
   color: $special-grey;
-  background-color: $black;
+  background-image: url("../../img/icon-instagram.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+
+.social-footer__face-logo::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  color: $special-grey;
+  background-image: url("../../img/icon-facebook.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+
+.social-footer__html-academy-logo {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $o-m-grey-2;
+  text-decoration: none;
+  background-color: none;
+
+  &::after {
+    content: "";
+    top: 30px;
+    display: inline-block;
+    width: 28px;
+    height: 34px;
+    background-color: $o-m-grey-2;
+    mask-image: url("../../img/htmlacademy.svg");
+    mask-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    background-color: $button-green;
+  }
+
+  &:active::after {
+    background-color: $button-green;
+    opacity: 0.3;
+  }
 }

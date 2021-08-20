@@ -1,6 +1,8 @@
 .food-variants {
   display: flex;
   flex-direction: column;
+  background-color: $basic-grey;
+  margin-top: 40px;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,5 +1,6 @@
 .promo {
   height: 480px;
+  width: 100%;
 }
 
 .promo__cat::before {
@@ -10,16 +11,13 @@
     linear-gradient(
       $promo-transparent,
       $promo-transparent),
-    url("../../img/promo-cat.png");
+    url("../../img/index-background-mobile.png");
   background-color: #4f4f54;
   background-repeat: no-repeat;
   position: absolute;
   background-size: 100%, 320px;
-  background-position-x:
-    50%,
-    -50px,
-    50%;
   z-index: -1;
+  margin-left: -20px;
 }
 
 .promo__header-text {
@@ -61,4 +59,8 @@
 
 .promo__img {
   padding-top: 25px;
+}
+
+.promo__button {
+  width: 100%;
 }

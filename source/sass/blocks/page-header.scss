@@ -1,4 +1,15 @@
 .page-header {
   display: flex;
   flex-direction: row;
+  position: relative;
+  height: 66px;
+}
+
+.page-header__cat-logo {
+  padding-left: 0;
+}
+
+.page-header__text-logo {
+  padding-left: 56px;
+  padding-top: 15px;
 }
