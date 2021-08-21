@@ -20,41 +20,66 @@
 }
 
 .social-footer__vk-logo {
-  ::before {
+  &::after {
     content: "";
     display: inline-block;
-    width: 23px;
-    height: 16px;
-    color: $special-grey;
-    background-image: url("../../img/icon-vkontakte.svg");
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: cover;
+    width: 28px;
+    height: 22px;
+    background-color: $o-m-grey-2;
+    mask-image: url("../../img/icon-vkontakte.svg");
+    mask-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    background-color: $button-green;
+  }
+
+  &:active::after {
+    background-color: $button-green;
+    opacity: 0.3;
   }
 }
 
-.social-footer__insta-logo::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  color: $special-grey;
-  background-image: url("../../img/icon-instagram.svg");
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-size: cover;
+.social-footer__insta-logo {
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: $o-m-grey-2;
+    mask-image: url("../../img/icon-instagram.svg");
+    mask-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    background-color: $button-green;
+  }
+
+  &:active::after {
+    background-color: $button-green;
+    opacity: 0.3;
+  }
 }
 
-.social-footer__face-logo::before {
-  content: "";
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  color: $special-grey;
-  background-image: url("../../img/icon-facebook.svg");
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-size: cover;
+.social-footer__face-logo {
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-color: $o-m-grey-2;
+    mask-image: url("../../img/icon-facebook.svg");
+    mask-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    background-color: $button-green;
+  }
+
+  &:active::after {
+    background-color: $button-green;
+    opacity: 0.3;
+  }
 }
 
 .social-footer__html-academy-logo {
