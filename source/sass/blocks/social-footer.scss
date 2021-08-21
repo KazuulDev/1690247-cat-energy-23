@@ -19,6 +19,42 @@
   }
 }
 
+.social-footer__wrapper {
+  border-top: 1px rgba(217, 217, 217, 1) solid;
+  border-bottom: 1px rgba(217, 217, 217, 1) solid;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  padding: 20px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .social-footer__wrapper {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-footer__wrapper {
+    border: none;
+  }
+}
+
+.social-footer__logo-img {
+  text-align: center;
+  margin-top: 39px;
+  margin-bottom: 32px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .social-footer__vk-logo {
   &::after {
     content: "";
@@ -94,13 +130,14 @@
 
   &::after {
     content: "";
-    top: 30px;
     display: inline-block;
     width: 28px;
     height: 34px;
     background-color: $o-m-grey-2;
     mask-image: url("../../img/htmlacademy.svg");
     mask-repeat: no-repeat;
+    margin-top: -30px;
+    margin-left: 256px;
   }
 
   &:hover::after {
@@ -111,4 +148,9 @@
     background-color: $button-green;
     opacity: 0.3;
   }
+}
+
+.social-footer__html-academy-wrapper {
+  padding-top: 28px;
+  padding-bottom: 32px;
 }

@@ -1,5 +1,19 @@
 .contacts-section {
   background-color: $basic-grey;
+  position: relative;
+}
+
+.contacts-section__wrapper {
+  position: absolute, center;
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+  background-color: $background-main;
+  margin-left: -20px;
+}
+
+.contacts-section__map-image {
+  margin-left: -20px;
 }
 
 .contacts-section__header {
@@ -10,7 +24,13 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black-secondary;
-  margin-top: 0;
+  margin: 0;
+  display: block;
+  width: 50%;
+  box-sizing: border-box;
+  padding-top: 28px;
+  padding-left: 20px;
+  padding-bottom: 26px;
 }
 
 .contacts-section__adress {
@@ -20,4 +40,10 @@
   font-size: 14px;
   line-height: 20px;
   color: $special-grey;
+  display: block;
+  width: 50%;
+  margin: 0;
+  padding-top: 28px;
+  padding-left: 2px;
+  padding-bottom: 26px;
 }
