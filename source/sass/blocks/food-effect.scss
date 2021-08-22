@@ -2,12 +2,53 @@
   background-color: $section-grey;
 }
 
+.food-effect__header {
+  padding-top: 27px;
+}
+
+.food-effect__numeral-wrapper {
+  border: 1px solid $special-grey;
+  border-radius: 4px;
+  display: flex;
+  width: 124px;
+  height: 56px;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+    font-size: 30px;
+    line-height: 37px;
+    margin-top: -2px;
+  }
+}
+
+.food-effect__container {
+  display: flex;
+  flex-direction: row;
+  gap: 31px;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    justify-content: start;
+    gap: 42px;
+  }
+}
+
 .food-effect__numeral-description {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 12px;
+  display: flex;
+  text-align: center;
+  background-color: $section-grey;
+  z-index: 1;
+  margin: 0;
+  margin-bottom: -10px;
+  width: 77px;
 }
 
 .food-effect__numeral {
@@ -17,15 +58,9 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
-}
-
-.food-effect-slider__var {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .food-effect__cost {
@@ -35,4 +70,5 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
 }

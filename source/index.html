@@ -29,63 +29,71 @@
         <h1 class="promo__header-text">Функциональное питание для котов</h1>
         <p class="promo__paragraph-text">Занялся собой? Займись котом!</p>
         <img class="promo__img" src="./img/index-can.png" alt="Банка жраки" height="270" width="280">
-        <a class="promo__button button" href="form.html">Подобрать программу</a>
+        <a class="promo__button page__button" href="form.html">Подобрать программу</a>
       </div>
     </section>
     <section class="page__leveler food-variants">
       <div class="food-variants__item food-variants__img--slim">
         <h2 class="food-variants__header">Похудение</h2>
-        <p class="food-variants__description section-text">Ваш кот весит больше собаки и почти утратил способность
+        <p class="food-variants__description page__section-text">Ваш кот весит больше собаки и почти утратил способность
           лазить по
           деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="food-variants__link" href="catalog.html">Каталог Slim</a>
       </div>
       <div class="food-variants__item food-variants__img--pro">
         <h2 class="food-variants__header">Набор массы</h2>
-        <p class="food-variants__description section-text">Заработать авторитет среди дворовых котов и даже собак? Серия
+        <p class="food-variants__description page__section-text">Заработать авторитет среди дворовых котов и даже собак?
+          Серия
           Cat Energy
           Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="food-variants__link" href="catalog.html">Каталог Pro</a>
       </div>
     </section>
     <section class="page__leveler food-advantages">
-      <h2 class="food-advantages__header section-header">Как это работает</h2>
+      <h2 class="food-advantages__header page__section-header">Как это работает</h2>
       <ol class="food-advantages__list">
-        <li class="food-advantages__item section-text eco">Функциональное питание содержит только полезные питательные
+        <li class="food-advantages__item page__section-text eco">Функциональное питание содержит только полезные
+          питательные
           вещества.</li>
-        <li class="food-advantages__item section-text chemistry">Выпускается в виде порошка, который нужно лишь залить
+        <li class="food-advantages__item page__section-text chemistry">Выпускается в виде порошка, который нужно лишь
+          залить
           кипятком и
           готово.</li>
-        <li class="food-advantages__item section-text food">Замените один-два приема обычной еды на наше функциональное
+        <li class="food-advantages__item page__section-text food">Замените один-два приема обычной еды на наше
+          функциональное
           питание.</li>
-        <li class="food-advantages__item section-text weight">Уже через месяц наслаждайтесь изменениями к лучшему вашего
+        <li class="food-advantages__item page__section-text weight">Уже через месяц наслаждайтесь изменениями к лучшему
+          вашего
           питомца!</li>
       </ol>
     </section>
     <section class="food-effect">
       <div class="page__leveler">
-        <h2 class="food-effect__header section-header">Живой пример</h2>
-        <p class="food-effect__description section-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный
+        <h2 class="food-effect__header page__section-header">Живой пример</h2>
+        <p class="food-effect__description page__section-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
+          обычный
           корм
           на Cat Energy
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
           16
           часов в день. </p>
-        <dl class="food-effect__numeral-wrapper food-effect__weight">
-          <dt class="food-effect__numeral-description">снижение веса</dt>
-          <dd class="food-effect__numeral">5 кг</dd>
-        </dl>
-        <dl class="food-effect__numeral-wrapper food-effect__time">
-          <dt class="food-effect__numeral-description">затрачено времени</dt>
-          <dd class="food-effect__numeral">60 дней</dd>
-        </dl>
+        <div class="food-effect__container">
+          <dl class="food-effect__numeral-wrapper food-effect__weight">
+            <dt class="food-effect__numeral-description">снижение веса</dt>
+            <dd class="food-effect__numeral">5 кг</dd>
+          </dl>
+          <dl class="food-effect__numeral-wrapper food-effect__time">
+            <dt class="food-effect__numeral-description">затрачено времени</dt>
+            <dd class="food-effect__numeral">60 дней</dd>
+          </dl>
+        </div>
         <p class="food-effect__cost">Затраты на питание: 15 000 руб.</p>
-        <div class="food-effect-slider">
+        <div class="food-effect-slider--before">
           <img class="food-effect-slider__image" src="./img/before-mobile.png" alt="Было">
           <img class="food-effect-slider__image page__visually-hidden" src="./img/after-mobile.png" alt="Стало">
           <div class="food-effect-slider__slider-switcher">
-            <!-- переключатель было/стало -->
             <span class="food-effect-slider__var">Было</span>
+            <button class="food-effect-slider__button"></button>
             <span class="food-effect-slider__var">Стало</span>
           </div>
         </div>
@@ -120,6 +128,7 @@
       </div>
     </section>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

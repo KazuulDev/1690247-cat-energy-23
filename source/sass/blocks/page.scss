@@ -39,3 +39,36 @@
     margin: 0 auto;
   }
 }
+
+.page__section-header {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.page__button {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $background-main;
+  text-decoration: none;
+  background-color: $button-green;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page__section-text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-grey;
+}
