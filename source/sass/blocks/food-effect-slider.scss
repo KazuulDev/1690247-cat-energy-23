@@ -11,6 +11,7 @@
 
 .food-effect-slider__slider-switcher {
   text-align: center;
+  padding-bottom: 31px;
 }
 
 .food-effect-slider--before .food-effect-slider__button {
@@ -21,8 +22,8 @@
   &::after {
     content: "";
     position: absolute;
-    left: (50% - 42px);
-    bottom: 10px;
+    left: 95px;
+    bottom: 35px;
     width: 84px;
     height: 14px;
     background-image: url("../../img/slider.svg");
@@ -40,8 +41,8 @@
   &::after {
     content: "";
     position: absolute;
-    left: (50% - 42px);
-    bottom: 10px;
+    left: 95px;
+    bottom: 35px;
     width: 84px;
     height: 14px;
     background-image: url("../../img/slider-1.svg");
