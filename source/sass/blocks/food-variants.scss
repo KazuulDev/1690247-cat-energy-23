@@ -3,16 +3,12 @@
   flex-direction: column;
   margin-top: 40px;
   gap: 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .food-variants {
+  @media (min-width: $tablet-width) {
     flex-direction: column;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .food-variants {
+  @media (min-width: $desktop-width) {
     flex-direction: row;
   }
 }
@@ -22,11 +18,21 @@
   background-color: $basic-grey;
   box-sizing: border-box;
   padding: 30px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 77px;
+    padding-left: 52px;
+  }
 }
 
 .food-variants__description {
   padding-bottom: 23px;
   border-bottom: 1px solid rgba(217, 217, 217, 1);
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding-bottom: 60px;
+  }
 }
 
 .food-variants__img--slim::before {
@@ -40,6 +46,18 @@
   background-size: 100%;
   margin-top: -5px;
   margin-right: 19px;
+
+  @media (min-width: $tablet-width) {
+    float: right;
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    float: left;
+    width: 100px;
+    height: 106px;
+  }
 }
 
 .food-variants__img--pro::before {
@@ -53,39 +71,20 @@
   background-size: 100%;
   margin-top: -5px;
   margin-right: 11px;
-}
 
-@media (min-width: $tablet-width) {
-  .food-variants__img--slim::before {
-    float: right;
-    width: 200px;
-    height: 211px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .food-variants__img--slim::before {
-    float: left;
-    width: 100px;
-    height: 106px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .food-variants__img--pro::before {
+  @media (min-width: $tablet-width) {
     float: right;
     width: 268px;
     height: 200px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .food-variants__img--pro::before {
+  @media (min-width: $desktop-width) {
     float: left;
     width: 134px;
     height: 100px;
   }
 }
+
 
 .food-variants__header {
   font-family: "Oswald", sans-serif;
@@ -95,6 +94,11 @@
   line-height: 37px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .food-variants__link {
@@ -126,5 +130,10 @@
     mask-image: url("../../img/icon_arrow.svg");
     mask-repeat: no-repeat;
     margin-left: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

@@ -24,17 +24,13 @@
   width: 280px;
   margin: 0 auto;
   position: relative;
-}
 
-@media (min-width: $tablet-width) {
-  .page__leveler {
+  @media (min-width: $tablet-width) {
     width: 708px;
     margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page__leveler {
+  @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
   }
@@ -71,4 +67,10 @@
   font-size: 14px;
   line-height: 18px;
   color: $special-grey;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

@@ -20,43 +20,32 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .food-advantages__list {
-    list-style: number;
-    display: grid;
-    grid-template-columns: 235px 249px;
-    column-gap: 147px;
-    row-gap: 114px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .food-advantages__list {
-    list-style: number;
-    display: flex;
-    flex-direction: row;
-  }
-}
-
 .food-advantages__item {
-  margin-left: 80px;
   position: relative;
+  margin-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-left: 0;
+    padding-top: 100px;
+  }
 
   &::before {
     position: absolute;
     content: "";
-    display: inline-block;
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
     background-size: 100%;
     margin-left: -80px;
     margin-top: -3px;
-  }
 
-  @media (min-width: $tablet-width) {
-    display: grid;
-    position: relative;
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-left: 0;
+      margin-top: -100px;
+    }
   }
 
   &::after {
@@ -77,18 +66,18 @@
 }
 
 
-.eco::before {
+.food-advantages--eco::before {
   background-image: url("../../img/eco.svg");
 }
 
-.chemistry::before {
+.food-advantages--chemistry::before {
   background-image: url("../../img/chemistry.svg");
 }
 
-.food::before {
+.food-advantages--food::before {
   background-image: url("../../img/food.svg");
 }
 
-.weight::before {
+.food-advantages--weight::before {
   background-image: url("../../img/weight.svg");
 }

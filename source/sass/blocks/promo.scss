@@ -1,5 +1,4 @@
 .promo {
-  height: 480px;
   width: 100%;
 }
 
@@ -18,6 +17,10 @@
   background-size: 100%, 320px;
   z-index: -1;
   margin-left: -20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .promo__header-text {
@@ -29,6 +32,13 @@
   color: $background-main;
   text-align: center;
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+    width: 420px;
+  }
 }
 
 .promo__paragraph-text {
@@ -40,6 +50,13 @@
   color: $background-main;
   text-align: center;
   padding-top: 25px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+  }
 }
 
 
@@ -59,9 +76,27 @@
 
 .promo__img {
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
 }
 
 .promo__button {
-  width: 100%;
+  top: 470px;
+  left: -10px;
   text-align: center;
+  position: absolute;
+
+
+  @media (min-width: $tablet-width) {
+    top: 270px;
+    left: 0;
+    font-size: 20px;
+    line-height: 20px;
+    z-index: 1;
+    width: 244px;
+    padding: 14px 16px;
+  }
 }

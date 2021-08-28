@@ -1,5 +1,9 @@
 .food-effect {
-  background-color: $section-grey;
+  background: $section-grey;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $background-main 462px, $section-grey 0);
+  }
 }
 
 .food-effect__header {
@@ -20,17 +24,17 @@
     height: 72px;
     font-size: 30px;
     line-height: 37px;
-    margin-top: -2px;
+    margin-top: 0;
   }
 }
 
 .food-effect__container {
   display: flex;
   flex-direction: row;
-  gap: 31px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    flex-grow: 1;
     justify-content: start;
     gap: 42px;
   }
@@ -49,6 +53,10 @@
   margin: 0;
   margin-bottom: -10px;
   width: 77px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $background-main;
+  }
 }
 
 .food-effect__numeral {
@@ -64,6 +72,7 @@
 }
 
 .food-effect__cost {
+  display: inline-block;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -71,4 +80,25 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  padding-left: 44px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: end;
+    padding-left: 120px;
+  }
+}
+
+.food-effect br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

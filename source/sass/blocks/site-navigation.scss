@@ -1,21 +1,18 @@
 .site-navigation {
   display: flex;
   flex-direction: column;
-  position: absolute;
   background-color: $background-main;
   width: 320px;
-  margin-top: 66px;
-  margin-left: -20px;
   z-index: 2;
   justify-items: center;
 }
 
 @media (min-width: $tablet-width) {
   .site-navigation {
-    position: static;
     display: flex;
     flex-direction: row;
     width: 440px;
+    gap: 35px;
   }
 }
 
@@ -57,9 +54,9 @@
     padding: 0;
     border: none;
     width: auto;
-    margin-top: -50px;
-    padding-left: 33px;
     background-color: transparent;
+    text-align: end;
+    white-space: nowrap;
   }
 
   &:nth-of-type(1) {

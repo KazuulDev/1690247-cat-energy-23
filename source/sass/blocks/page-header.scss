@@ -7,9 +7,33 @@
 
 .page-header__cat-logo {
   padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    box-sizing: border-box;
+    background: url("../../img/logo-tablet.svg") no-repeat;
+    width: 74px;
+    height: 52px;
+    padding-left: 180px;
+  }
 }
 
 .page-header__text-logo {
   padding-left: 56px;
   padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__nav {
+  margin-top: 66px;
+  margin-left: -20px;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    margin: auto;
+    position: relative;
+  }
 }
