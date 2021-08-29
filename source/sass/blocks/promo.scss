@@ -21,6 +21,23 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    right: 0;
+    top: -116px;
+    width: 720px;
+    height: 694px;
+    background-image:
+      linear-gradient(
+        $promo-transparent,
+        $promo-transparent),
+      url("../../img/promo-cat.png");
+    background-color: #4f4f54;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+  }
 }
 
 .promo__header-text {
