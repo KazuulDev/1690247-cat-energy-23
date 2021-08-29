@@ -24,7 +24,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    right: 0;
+    right: -110px;
     top: -116px;
     width: 720px;
     height: 694px;
@@ -56,6 +56,12 @@
     text-align: start;
     width: 420px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 107px;
+    padding-left: 80px;
+    margin-bottom: 0;
+  }
 }
 
 .promo__paragraph-text {
@@ -73,6 +79,12 @@
     font-size: 20px;
     line-height: 20px;
     text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    padding-top: 40px;
+    padding-left: 80px;
   }
 }
 
@@ -98,6 +110,12 @@
     width: 709px;
     height: 609px;
   }
+
+
+  @media (min-width: $tablet-width) {
+    width: 552px;
+    height: 499px;
+  }
 }
 
 .promo__button {
@@ -115,5 +133,10 @@
     z-index: 1;
     width: 244px;
     padding: 14px 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 107px;
+    margin-left: 80px;
   }
 }

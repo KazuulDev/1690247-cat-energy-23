@@ -18,7 +18,8 @@
     flex-direction: row;
     width: 478px;
     align-items: space-between;
-    margin-left: 450px;
+    margin-left: 561px;
+    margin-top: 70px;
     background-color: transparent;
   }
 }
@@ -80,6 +81,10 @@
 
   @media (min-width: $tablet-width) {
     text-decoration: underline solid 2px $button-green;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-decoration: underline solid 2px $background-main;
   }
 }
 
