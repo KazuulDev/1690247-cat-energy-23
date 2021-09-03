@@ -1,0 +1,22 @@
+.catalog-item {
+  width: 100%;
+}
+
+.catalog-item__img {
+  float: left;
+
+  @media (min-width: $tablet-width) {
+    float: none;
+  }
+}
+
+.catalog-item__img-wrapper {
+  box-sizing: border-box;
+  width: 50%;
+  height: fit-content;
+  background-color: $background-main;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
