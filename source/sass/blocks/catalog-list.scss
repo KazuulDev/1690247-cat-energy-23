@@ -1,17 +1,13 @@
 .catalog-list {
   display: flex;
   flex-direction: column;
-}
 
-@media (min-width: $tablet-width) {
-  .catalog-list {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .catalog-list {
+  @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
   }

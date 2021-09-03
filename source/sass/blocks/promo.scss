@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
   position: absolute;
   background-size: 100%, 320px;
-  z-index: -1;
+  z-index: -3;
   margin-left: -20px;
 
   @media (min-width: $tablet-width) {
@@ -115,6 +115,8 @@
   @media (min-width: $tablet-width) {
     width: 552px;
     height: 499px;
+    margin-top: -300px;
+    margin-left: 450px;
   }
 }
 
@@ -136,6 +138,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 14px 26px;
     margin-top: 107px;
     margin-left: 80px;
   }
