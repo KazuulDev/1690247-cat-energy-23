@@ -1,7 +1,6 @@
 .catalog-list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
