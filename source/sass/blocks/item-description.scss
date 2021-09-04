@@ -1,4 +1,29 @@
 .item-description__list {
   display: flex;
   flex-direction: row;
+  align-content: space-between;
+  width: 141px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+
+.item-description__name {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $o-m-grey;
+  width: 80px;
 }
