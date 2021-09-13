@@ -1,12 +1,33 @@
 .scheme-form-cat {
-  border: none;
-  padding: 0;
-  margin: 0;
   margin-top: 22px;
+  margin-bottom: 12px;
 }
 
 .scheme-form-cat div {
   display: flex;
   flex-direction: row;
   width: 100%;
+  flex-grow: 0;
+  padding-bottom: 9px;
+}
+
+.scheme-form-cat input {
+  flex-grow: 1;
+  margin-top: 3px;
+  height: 45px;
+}
+
+.scheme-form-cat__name-input {
+  padding: 14px;
+  margin-left: 14px;
+}
+
+.scheme-form-cat__weight-input {
+  margin-left: 17px;
+  padding-left: 14px;
+}
+
+.scheme-form-cat__age-input {
+  margin-left: 15px;
+  padding-left: 15px;
 }

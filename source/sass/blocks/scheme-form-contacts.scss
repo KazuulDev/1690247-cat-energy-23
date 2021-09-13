@@ -1,0 +1,62 @@
+.scheme-form-contacts {
+  margin-top: 25px;
+  padding-left: 0;
+  margin-bottom: 11px;
+}
+
+
+.scheme-form-contacts__legend {
+  padding: 0;
+  position: relative;
+  margin-bottom: 34px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #68b738;
+    width: 99px;
+    height: 2px;
+    right: -20px;
+    top: 17px;
+  }
+}
+
+.scheme-form-contacts div {
+  display: flex;
+  flex-direction: row;
+}
+
+.scheme-form-contacts input {
+  flex-grow: 1;
+  margin-top: 3px;
+  height: 45px;
+}
+
+.scheme-form-contacts__email {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 14px;
+    left: 0;
+    top: 0;
+    background-image: url("./../../img/mail-icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
+}
+
+.scheme-form-contacts__email-input {
+  margin-left: 12px;
+  padding-left: 13px;
+  margin-bottom: 11px;
+}
+
+.scheme-form-contacts__tel-input {
+  margin-left: 10px;
+  padding-left: 15px;
+  margin-bottom: 11px;
+}

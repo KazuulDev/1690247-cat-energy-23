@@ -6,22 +6,80 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $main-text;
+  margin-left: 46px;
+  position: relative;
 }
 
 .scheme-form-spec {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-}
+  gap: 25px;
 
-@media (min-width: $tablet-width) {
-  .scheme-form-spec {
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
     flex-direction: row;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .scheme-form-spec {
-    flex-direction: row;
+.scheme-form-spec__legend {
+  padding-left: 0;
+  position: relative;
+  margin-bottom: 39px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #68b738;
+    width: 136px;
+    height: 2px;
+    right: -157px;
+    top: 16px;
   }
+}
+
+.scheme-form-spec__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.scheme-form-spec__checkbox + .scheme-form-spec__label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  left: -45px;
+  top: -7px;
+  background-image: url("./../../img/check.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.scheme-form-spec__checkbox:hover + .scheme-form-spec__label::before,
+.scheme-form-spec__checkbox:focus + .scheme-form-spec__label::before {
+  background-image: url("./../../img/check_hover.svg");
+}
+
+.scheme-form-spec__checkbox:disabled + .scheme-form-spec__label::before {
+  background-image: url("./../../img/check_hover.svg");
+  opacity: 0.3;
+}
+
+.scheme-form-spec__checkbox:checked + .scheme-form-spec__label::before {
+  background-image: url("./../../img/checked.svg");
+}
+
+.scheme-form-spec__checkbox:checked:hover + .scheme-form-spec__label::before,
+.scheme-form-spec__checkbox:checked:focus + .scheme-form-spec__label::before {
+  background-image: url("./../../img/checked_hover.svg");
+}
+
+.scheme-form-spec__checkbox:checked:disabled + .scheme-form-spec__label::before {
+  background-image: url("./../../img/checked_hover.svg");
+  opacity: 0.3;
 }
