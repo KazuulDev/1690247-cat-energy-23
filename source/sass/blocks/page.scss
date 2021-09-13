@@ -13,6 +13,11 @@
 
 .page__footer {
   background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 106px;
+    padding-bottom: 10px;
+  }
 }
 
 .page__visually-hidden {
@@ -58,8 +63,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 120px;
-    margin-bottom: 82px;
+    margin-top: 122px;
+    margin-bottom: 80px;
   }
 }
 

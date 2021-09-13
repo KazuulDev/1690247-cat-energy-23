@@ -6,6 +6,17 @@
     border-right: 1px solid $dl-border;
     border-left: 1px solid $dl-border;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+    padding: 15px 0 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    border-right: none;
+    border-left: none;
+    position: relative;
+  }
 }
 
 .special-item:last-of-type {
@@ -44,6 +55,13 @@
     margin-top: 0;
     margin-bottom: 25px;
   }
+
+  @media (min-width: $tablet-width) {
+    white-space: nowrap;
+    position: absolute;
+    left: 1px;
+    top: 26px;
+  }
 }
 
 .special-item dl {
@@ -58,6 +76,14 @@
     margin-top: -40px;
     gap: 48px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+    margin: 0;
+    gap: 0;
+    margin-top: 15px;
+    margin-right: 38px;
+  }
 }
 
 .special-item__cost-description {
@@ -69,5 +95,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: -1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 244px;
+    height: 40px;
+    margin-right: 1px;
   }
 }

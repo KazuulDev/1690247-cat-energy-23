@@ -20,6 +20,19 @@
       background-image: url("./../../img/promo-present_tablet@2x.jpg");
     }
   }
+
+  @media (min-width: $desktop-width) {
+    height: 289px;
+    width: 245px;
+    background-image: url("./../../img/promo-present_desktop@1x.jpg");
+    margin-top: 185px;
+    margin-left: 79px;
+    justify-content: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../../img/promo-present_tablet@2x.jpg");
+    }
+  }
 }
 
 .promo-present::after {
@@ -33,6 +46,13 @@
 
   @media (min-width: $tablet-width) {
     left: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 84px;
+    top: 57px;
+    width: 80px;
+    height: 82px;
   }
 }
 
@@ -52,5 +72,11 @@
     text-align: start;
     margin-right: 125px;
     margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 0;
   }
 }

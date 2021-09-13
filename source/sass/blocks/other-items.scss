@@ -16,6 +16,10 @@
     font-size: 20px;
     line-height: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 176px;
+  }
 }
 
 .other-items__more-icon::after {
@@ -34,6 +38,10 @@
     height: 60px;
     left: calc(50% - 30px);
     top: 126px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 128px;
   }
 }
 
@@ -88,6 +96,12 @@
     margin: auto;
     margin-top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    bottom: 0;
+    width: 169px;
+    margin-top: 1px;
+  }
 }
 
 .other-items {
@@ -112,8 +126,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 0;
-    width: 245px;
-    height: 431px;
+    bottom: -2px;
+    left: -1px;
+    width: 242px;
+    height: 428px;
   }
 }
