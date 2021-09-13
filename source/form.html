@@ -3,24 +3,30 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Кэт энерджи. Форма.</title>
+  <title>Кэт энерджи. Форма</title>
   <link href="./css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon_32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="img/favicon/favicon.svg" sizes="any" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/favicon-apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
-  <header class="page__leveler page__header">
-    <img class="page-header__logo cat-logo" src="img/logo-mobile.svg" alt="логотип Кэт энерджи" width="33" height="37">
-    <img class="page-header__text text-logo" src="img/logo-text.svg" alt="текстовая часть логотипа" width="101"
-      height="18">
-    <nav class="site-navigation">
+  <header class="page__leveler page__header page-header">
+    <img class="page-header__logo page-header__cat-logo" src="img/logo-mobile.svg" alt="логотип Кэт энерджи" width="33"
+      height="37">
+    <img class="page-header__text page-header__text-logo" src="img/logo-text.svg" alt="текстовая часть логотипа"
+      width="101" height="18">
+    <!-- <nav class="site-navigation site-navigation--opened page-header__nav">
       <button class="site-navigation__toggle">
         <span class="page__visually-hidden">Открыть меню</span>
       </button>
       <a class="site-navigation__item" href="index.html">Главная</a>
       <a class="site-navigation__item" href="catalog.html">Каталог продукции</a>
       <a class="site-navigation__item site-navigation__item--current" href="form.html">Подбор программы</a>
-    </nav>
+    </nav> -->
   </header>
   <main class="page__main page__leveler">
     <div class="description">
@@ -30,12 +36,18 @@
     <form class="scheme-form" action="https://echo.htmlacademy.ru/courses" method="post">
       <div class="cat-info">
         <fieldset class="scheme-form-cat">
-          <p class="scheme-form-text scheme-form-cat__name">Имя:*</p><input
-            class="scheme-form-cat__name-input scheme-form-text" type="text" name="name" value="Барсик" required>
-          <p class="scheme-form-text scheme-form-cat__weight">Вес (Кг):* </p><input
-            class="scheme-form-cat__weight-input scheme-form-text" type="number" name="weight" value="7" required>
-          <p class="scheme-form-text scheme-form-cat__age">Возраст (лет):</p><input
-            class="scheme-form-cat__age-input scheme-form-text" type="number" name="age" value="7">
+          <div>
+            <p class="scheme-form__text scheme-form-cat__name">Имя:*</p><input
+              class="scheme-form-cat__name-input scheme-form__text" type="text" name="name" value="Барсик" required>
+          </div>
+          <div>
+            <p class="scheme-form__text scheme-form-cat__weight">Вес (Кг):* </p><input
+              class="scheme-form-cat__weight-input scheme-form__text" type="number" name="weight" value="7" required>
+          </div>
+          <div>
+            <p class="scheme-form__text scheme-form-cat__age">Возраст (лет):</p><input
+              class="scheme-form-cat__age-input scheme-form__text" type="number" name="age" value="7">
+          </div>
         </fieldset>
         <fieldset class="scheme-form-var">
           <input class="scheme-form-var__radio" type="radio" name="scheme" value="slim" id="slim-radio" checked>
@@ -48,16 +60,16 @@
       </div>
       <fieldset class="scheme-form-contacts">
         <legend class="scheme-form-contacts__legend legend-text">Контактные данные (владельца кота)</legend>
-        <p class="scheme-form-contacts__email scheme-form-text">E-mail:*</p>
-        <input class="scheme-form-contacts__email-input scheme-form-text" type="email" name="email"
+        <p class="scheme-form-contacts__email scheme-form__text">E-mail:*</p>
+        <input class="scheme-form-contacts__email-input scheme-form__text" type="email" name="email"
           value="kuklachev@gmail.com" required>
-        <p class="scheme-form-contacts__tel scheme-form-text">Телефон:*</p>
-        <input class="scheme-form-contacts__tel-input scheme-form-text" type="tel" name="phone"
+        <p class="scheme-form-contacts__tel scheme-form__text">Телефон:*</p>
+        <input class="scheme-form-contacts__tel-input scheme-form__text" type="tel" name="phone"
           value="8 (960) 900-60-90">
       </fieldset>
       <fieldset class="scheme-form-comment">
         <legend class="scheme-form-comment__legend legend-text">Комментарий</legend>
-        <textarea class="scheme-form-comment__text scheme-form-text" name="comment" cols="30"
+        <textarea class="scheme-form-comment__text scheme-form__text" name="comment" cols="30"
           rows="10">Расскажите обо всех повадках кота</textarea>
       </fieldset>
       <fieldset class="scheme-form-spec">
@@ -80,11 +92,11 @@
   <footer class="page__footer">
     <section class="contacts-section">
       <div class="page__leveler">
-      <div class="contacts-section__wrapper">
-        <h2 class="contacts-section__header">Приглашаем<br> к сотрудничеству <br>дилеров!</h2>
-        <p class="contacts-section__adress">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        <div class="contacts-section__wrapper">
+          <h2 class="contacts-section__header">Приглашаем<br> к сотрудничеству <br>дилеров!</h2>
+          <p class="contacts-section__adress">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        </div>
       </div>
-    </div>
       <div class="map__wrapper">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716405354!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619771954735!5m2!1sru!2sru"

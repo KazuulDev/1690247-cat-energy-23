@@ -1,5 +1,13 @@
 .promo {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: auto;
+  }
 }
 
 .promo__cat::before {
@@ -55,6 +63,10 @@
     line-height: 60px;
     text-align: start;
     width: 420px;
+    padding-top: 5px;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,6 +88,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding-top: 20px;
     font-size: 20px;
     line-height: 20px;
     text-align: start;
@@ -109,13 +122,13 @@
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
+    margin-top: -27px;
+    margin-left: -65px;
   }
 
-
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
-    margin-top: -300px;
     margin-left: 450px;
   }
 }
@@ -128,13 +141,14 @@
 
 
   @media (min-width: $tablet-width) {
-    top: 270px;
-    left: 0;
+    top: 234px;
+    left: 2px;
     font-size: 20px;
     line-height: 20px;
     z-index: 1;
     width: 244px;
-    padding: 14px 16px;
+    padding: 18px 26px 16px;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
