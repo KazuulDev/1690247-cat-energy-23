@@ -11,6 +11,7 @@
     flex-direction: row;
     width: 440px;
     gap: 35px;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,7 +19,7 @@
     flex-direction: row;
     width: 478px;
     align-items: space-between;
-    margin-left: 561px;
+    margin-left: 541px;
     margin-top: 70px;
     background-color: transparent;
   }
@@ -63,7 +64,7 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    color: $background-main;
+    color: $black-secondary;
   }
 
   &:nth-of-type(1) {

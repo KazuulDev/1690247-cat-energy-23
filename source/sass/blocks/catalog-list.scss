@@ -1,15 +1,17 @@
 .catalog-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 58px;
   }
 }
 
@@ -24,6 +26,10 @@
   z-index: 1;
   box-shadow: 20px 0 0 0 rgba(235, 235, 235, 1),
     -20px 0 0 0 rgba(235, 235, 235, 1);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .catalog-list:last-child::before {
@@ -36,4 +42,8 @@
   z-index: 1;
   box-shadow: 20px 0 0 0 rgba(235, 235, 235, 1),
     -20px 0 0 0 rgba(235, 235, 235, 1);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

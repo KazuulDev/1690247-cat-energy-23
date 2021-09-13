@@ -3,21 +3,18 @@
   flex-direction: column;
   height: auto;
   position: relative;
-}
 
-@media (min-width: $tablet-width) {
-  .social-footer {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    padding: 40px 0 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .social-footer {
-    display: flex;
-    flex-direction: row;
-  }
-}
 
 .social-footer__wrapper {
   border-top: 1px rgba(217, 217, 217, 1) solid;
@@ -27,24 +24,18 @@
   justify-content: center;
   gap: 34px;
   padding: 20px 0;
-}
 
-@media (min-width: $tablet-width) {
-  .social-footer__wrapper {
+  @media (min-width: $tablet-width) {
     border: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .social-footer__wrapper {
-    border: none;
+    gap: 27px;
+    margin-right: -20px;
   }
 }
 
 .social-footer__logo-img {
   text-align: center;
-  margin-top: 39px;
-  margin-bottom: 32px;
+  margin-top: 34px;
+  margin-bottom: 28px;
 
   &:hover {
     opacity: 0.8;
@@ -53,17 +44,31 @@
   &:active {
     opacity: 0.6;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .social-footer__vk-logo {
   &::after {
     content: "";
     display: inline-block;
-    width: 28px;
-    height: 22px;
+    width: 23px;
+    height: 17px;
     background-color: $o-m-grey-2;
     mask-image: url("../../img/icon-vkontakte.svg");
+    mask-size: cover;
     mask-repeat: no-repeat;
+    mask-position: top left;
+    margin-left: -4px;
+    margin-bottom: -4px;
+
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 22px;
+      margin-right: -10px;
+    }
   }
 
   &:hover::after {
@@ -80,11 +85,21 @@
   &::after {
     content: "";
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     background-color: $o-m-grey-2;
     mask-image: url("../../img/icon-instagram.svg");
     mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: top left;
+    margin-left: 4px;
+    margin-bottom: -6px;
+
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+      margin-right: -10px;
+    }
   }
 
   &:hover::after {
@@ -106,6 +121,17 @@
     background-color: $o-m-grey-2;
     mask-image: url("../../img/icon-facebook.svg");
     mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: top left;
+    margin-left: 4px;
+    margin-bottom: -6px;
+
+    @media (min-width: $tablet-width) {
+      width: 28px;
+      height: 33px;
+      margin-top: -6px;
+      margin-right: -12px;
+    }
   }
 
   &:hover::after {
@@ -128,16 +154,26 @@
   text-decoration: none;
   background-color: none;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+  }
+
   &::after {
     content: "";
     display: inline-block;
-    width: 28px;
-    height: 34px;
+    width: 34px;
+    height: 41px;
     background-color: $o-m-grey-2;
     mask-image: url("../../img/htmlacademy.svg");
     mask-repeat: no-repeat;
     margin-top: -30px;
-    margin-left: 256px;
+    margin-left: 245px;
+    mask-size: cover;
+    mask-position: top left;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 130px;
+    }
   }
 
   &:hover::after {
@@ -151,6 +187,6 @@
 }
 
 .social-footer__html-academy-wrapper {
-  padding-top: 28px;
+  padding-top: 20px;
   padding-bottom: 32px;
 }

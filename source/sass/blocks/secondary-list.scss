@@ -1,16 +1,9 @@
 .secondary-list {
   display: flex;
   flex-direction: column;
-}
 
-@media (min-width: $tablet-width) {
-  .secondary-list {
+  @media (min-width: $desktop-width) {
     flex-direction: row;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .secondary-list {
-    flex-direction: row;
-  }
-}

@@ -49,6 +49,20 @@
   }
 }
 
+.page__section-header--catalog {
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 55px;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 120px;
+    margin-bottom: 82px;
+  }
+}
+
 .page__button {
   font-family: "Oswald", sans-serif;
   font-style: normal;

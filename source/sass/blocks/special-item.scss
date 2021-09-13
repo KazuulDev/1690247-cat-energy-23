@@ -1,12 +1,18 @@
-.special-item__cost-description {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 14px;
-  color: $special-grey;
+.special-item {
+  border-top: 1px solid $dl-border;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    border-right: 1px solid $dl-border;
+    border-left: 1px solid $dl-border;
+  }
 }
 
+.special-item:last-of-type {
+  border-bottom: 1px solid $dl-border;
+}
+
+.special-item__cost-description,
 .special-item__cost-var {
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -14,4 +20,54 @@
   font-size: 14px;
   line-height: 14px;
   color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.special-item__name {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $o-m-grey;
+  margin-top: 12px;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+}
+
+.special-item dl {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 14px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    float: right;
+    margin-top: -40px;
+    gap: 48px;
+  }
+}
+
+.special-item__cost-description {
+  margin: 0;
+}
+
+.special-item__add-to-cart {
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -1px;
+  }
 }
