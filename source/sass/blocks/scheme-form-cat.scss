@@ -1,6 +1,11 @@
 .scheme-form-cat {
   margin-top: 22px;
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 41px;
+    margin-top: 37px;
+  }
 }
 
 .scheme-form-cat div {
@@ -9,12 +14,25 @@
   width: 100%;
   flex-grow: 0;
   padding-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    margin-bottom: 11px;
+  }
 }
 
 .scheme-form-cat input {
   flex-grow: 1;
   margin-top: 3px;
   height: 45px;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    margin-top: 10px;
+    margin-left: 16px;
+    padding-left: 18px;
+    margin-right: 37px;
+  }
 }
 
 .scheme-form-cat__name-input {

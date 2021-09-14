@@ -2,6 +2,10 @@
   margin-top: 25px;
   padding-left: 0;
   margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 75px;
+  }
 }
 
 
@@ -9,6 +13,14 @@
   padding: 0;
   position: relative;
   margin-bottom: 34px;
+
+
+  @media (min-width: $tablet-width) {
+    padding-right: 42px;
+    padding-left: 39px;
+    background-color: $background-main;
+    margin-bottom: 66px;
+  }
 
   &::after {
     content: "";
@@ -18,18 +30,35 @@
     height: 2px;
     right: -20px;
     top: 17px;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      right: -145px;
+      top: 22px;
+    }
   }
 }
 
 .scheme-form-contacts div {
   display: flex;
   flex-direction: row;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 41px;
+  }
 }
 
 .scheme-form-contacts input {
   flex-grow: 1;
   margin-top: 3px;
   height: 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+    height: 52px;
+    margin-right: 35px;
+  }
 }
 
 .scheme-form-contacts__email {
@@ -40,12 +69,17 @@
     position: absolute;
     width: 20px;
     height: 14px;
-    left: 0;
-    top: 0;
+    left: 245px;
+    top: 1px;
     background-image: url("./../../img/mail-icon.svg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      top: 8px;
+      left: 594px;
+    }
   }
 }
 
@@ -53,10 +87,43 @@
   margin-left: 12px;
   padding-left: 13px;
   margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 19px;
+    padding-left: 20px;
+  }
 }
 
 .scheme-form-contacts__tel-input {
   margin-left: 10px;
   padding-left: 15px;
   margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 16px;
+    padding-left: 19px;
+  }
+}
+
+.scheme-form-contacts__tel {
+  position: relative;
+  margin-left: -3px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 246px;
+    top: -1px;
+    background-image: url("./../../img/phone-icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      top: 6px;
+      left: 597px;
+    }
+  }
 }

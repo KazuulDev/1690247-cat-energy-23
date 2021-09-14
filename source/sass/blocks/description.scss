@@ -1,5 +1,11 @@
 .description__header {
   padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 55px;
+    margin-left: 39px;
+    margin-bottom: 0;
+  }
 }
 
 .description__paragraph {
@@ -10,5 +16,12 @@
   line-height: 18px;
   text-transform: uppercase;
   width: 226px;
-}
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 39px;
+    width: 50%;
+    margin-top: 41px;
+  }
+}
