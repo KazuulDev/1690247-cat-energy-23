@@ -5,7 +5,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $black-secondary;
+  color: var(--black-secondary);
   text-align: center;
   margin-bottom: 0;
 
@@ -51,7 +51,7 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  color: $special-grey;
+  color: var(--special-grey);
   text-align: center;
   margin-top: 9px;
   margin-bottom: 21px;
@@ -82,9 +82,9 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  color: $main-text;
+  color: var(--main-text);
   text-decoration: none;
-  background-color: $basic-grey;
+  background-color: var(--basic-grey);
   border: none;
   text-transform: uppercase;
   text-align: center;
@@ -122,7 +122,7 @@
     left: 0;
     width: 320px;
     height: 425px;
-    border: 2px solid $basic-grey;
+    border: 2px solid var(--basic-grey);
   }
 
   @media (min-width: $desktop-width) {

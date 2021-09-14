@@ -1,8 +1,8 @@
 .food-effect {
-  background: $section-grey;
+  background: var(--section-grey);
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, $background-main 462px, $section-grey 0);
+    background: linear-gradient(to bottom, var(--background-main) 462px, var(--section-grey) 0);
   }
 }
 
@@ -11,7 +11,7 @@
 }
 
 .food-effect__numeral-wrapper {
-  border: 1px solid $dl-border;
+  border: 1px solid var(--dl-border);
   border-radius: 4px;
   display: flex;
   width: 124px;
@@ -48,14 +48,14 @@
   line-height: 12px;
   display: flex;
   text-align: center;
-  background-color: $section-grey;
+  background-color: var(--section-grey);
   z-index: 1;
   margin: 0;
   margin-bottom: -10px;
   width: 77px;
 
   @media (min-width: $tablet-width) {
-    background-color: $background-main;
+    background-color: var(--background-main);
   }
 }
 

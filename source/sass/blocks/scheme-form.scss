@@ -30,7 +30,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $special-grey;
+  color: var(--special-grey);
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -49,19 +49,19 @@ input[type="tel"],
 input[type="email"],
 input[type="text"],
 textarea {
-  border: 1px solid $form;
+  border: 1px solid var(--form);
   box-sizing: border-box;
 
   &:hover,
   :focus {
-    border: 1px solid $dl-border;
+    border: 1px solid var(--dl-border);
   }
 
   &:active {
-    border: 2px solid $special-grey;
+    border: 2px solid var(--special-grey);
   }
 
   &:invalid {
-    border: 2px solid $form-error;
+    border: 2px solid var(--form-error);
   }
 }

@@ -52,7 +52,7 @@
     @media (min-width: $tablet-width) {
       counter-increment: myCounter;
       content: counter(myCounter);
-      color: $basic-grey;
+      color: var(--basic-grey);
       display: flex;
       font-family: "Oswald", "Arial", sans-serif;
       font-size: 280px;

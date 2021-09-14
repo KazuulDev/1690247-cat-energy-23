@@ -16,22 +16,30 @@
 </head>
 
 <body class="page__body">
-  <header class="page__leveler page__header page-header">
-    <a class="" href="index.html" aria-current="page">
+  <header class="page__leveler page-header">
+    <a class="page-header__logo-link" href="index.html" aria-current="page">
       <picture>
         <source media="(min-width: 1280px)" srcset="img/logo.svg#desktop">
         <source media="(min-width: 768px)" srcset="img/logo.svg#tablet">
-        <img class="page-header__logo page-header__cat-logo" src="img/logo.svg#mobile" alt="логотип Кэт энерджи" width="33" height="37">
+        <img class="page-header__mark" src="img/logo.svg#mobile" alt="Фирменный знак Кэт Энерджи" width="34" height="38">
       </picture>
-      <img class="page-header__text page-header__text-logo" src="img/logo.svg#logotype" alt="текстовая часть логотипа" width="101" height="18">
+      <img class="page-header__logo" src="img/logo.svg#logotype" alt="Логотип Кэт Энерджи" width="101" height="18">
     </a>
-    <nav class="site-navigation site-navigation--nojs page-header__nav site-navigation--current-index">
-      <button class="site-navigation__toggle">
+    <nav class="site-navigation site-navigation--nojs site-navigation--index">
+      <button class="site-navigation__toggle" type="button" hidden>
         <span class="page__visually-hidden">Открыть меню</span>
       </button>
-      <a class="site-navigation__item" href="index.html" aria-current="page">Главная</a>
-      <a class="site-navigation__item" href="catalog.html">Каталог продукции</a>
-      <a class="site-navigation__item" href="form.html">Подбор программы</a>
+      <ul class="site-navigation__list">
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="index.html" aria-current="page">Главная</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="page__main">

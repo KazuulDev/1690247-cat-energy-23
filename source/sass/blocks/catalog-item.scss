@@ -35,7 +35,7 @@
     position: absolute;
     width: 324px;
     height: 430px;
-    background-color: $basic-grey;
+    background-color: var(--basic-grey);
   }
 
   @media (min-width: $desktop-width) {
@@ -128,7 +128,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $o-m-grey;
+  color: var(--o-m-grey);
   width: 80px;
 
   @media (min-width: $tablet-width) {

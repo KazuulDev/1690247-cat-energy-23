@@ -1,28 +1,42 @@
 .promo {
+  box-sizing: border-box;
   width: 100%;
+  display: grid;
+
+  @media (max-width: $tablet-width - 1px) {
+    position: relative;
+  }
 
   @media (min-width: $tablet-width) {
     padding-left: 88px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: auto;
+    padding-left: initial;
   }
 }
 
 .promo__cat::before {
   content: "";
-  width: 320px;
-  height: 302px;
-  background-image:
-    linear-gradient(
-      $promo-transparent,
-      $promo-transparent),
-    url("../../img/index-background-mobile.png");
-  background-color: #4f4f54;
-  background-repeat: no-repeat;
   position: absolute;
-  background-size: 100%, 320px;
+  left: 0;
+  right: 0;
+  height: 302px;
+  background:
+    linear-gradient(
+      var(--promo-transparent),
+      var(--promo-transparent)
+    ),
+    url("../../img/index-background-mobile.png"),
+    linear-gradient(
+      to right,
+      #4f4f54 50%,
+      #424146 50%
+    );
+  background-color: #4f4f54;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   z-index: -3;
   margin-left: -20px;
 
@@ -32,19 +46,20 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    right: -110px;
-    top: -116px;
-    width: 720px;
+    left: initial;
+    right: 0;
+    top: 0;
+    width: 50%;
     height: 694px;
     background-image:
       linear-gradient(
-        $promo-transparent,
-        $promo-transparent),
+        var(--promo-transparent),
+        var(--promo-transparent)),
       url("../../img/promo-cat.png");
     background-color: #4f4f54;
     background-repeat: no-repeat;
-    position: absolute;
-    background-size: cover;
+    background-position: right;
+    background-size: contain;
   }
 }
 
@@ -54,7 +69,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: $background-main;
+  color: var(--background-main);
   text-align: center;
   padding-top: 27px;
 
@@ -82,7 +97,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
-  color: $background-main;
+  color: var(--background-main);
   text-align: center;
   padding-top: 25px;
   text-transform: uppercase;
@@ -105,14 +120,14 @@
 @media (min-width: $tablet-width) {
   .promo__header-text,
   .promo__paragraph-text {
-    color: $black;
+    color: var(--black);
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__header-text,
   .promo__paragraph-text {
-    color: $black;
+    color: var(--black);
   }
 }
 

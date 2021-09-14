@@ -65,7 +65,7 @@
     display: inline-block;
     width: 23px;
     height: 17px;
-    background-color: $o-m-grey-2;
+    background-color: var(--o-m-grey)-2;
     mask-image: url("../../img/icon-vkontakte.svg");
     mask-size: cover;
     mask-repeat: no-repeat;
@@ -85,11 +85,11 @@
   }
 
   &:hover::after {
-    background-color: $button-green;
+    background-color: var(--button-green);
   }
 
   &:active::after {
-    background-color: $button-green;
+    background-color: var(--button-green);
     opacity: 0.3;
   }
 }
@@ -100,7 +100,7 @@
     display: inline-block;
     width: 17px;
     height: 17px;
-    background-color: $o-m-grey-2;
+    background-color: var(--o-m-grey)-2;
     mask-image: url("../../img/icon-instagram.svg");
     mask-repeat: no-repeat;
     mask-size: cover;
@@ -120,11 +120,11 @@
   }
 
   &:hover::after {
-    background-color: $button-green;
+    background-color: var(--button-green);
   }
 
   &:active::after {
-    background-color: $button-green;
+    background-color: var(--button-green);
     opacity: 0.3;
   }
 }
@@ -135,7 +135,7 @@
     display: inline-block;
     width: 22px;
     height: 22px;
-    background-color: $o-m-grey-2;
+    background-color: var(--o-m-grey)-2;
     mask-image: url("../../img/icon-facebook.svg");
     mask-repeat: no-repeat;
     mask-size: cover;
@@ -156,11 +156,11 @@
   }
 
   &:hover::after {
-    background-color: $button-green;
+    background-color: var(--button-green);
   }
 
   &:active::after {
-    background-color: $button-green;
+    background-color: var(--button-green);
     opacity: 0.3;
   }
 }
@@ -171,7 +171,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: $o-m-grey-2;
+  color: var(--o-m-grey)-2;
   text-decoration: none;
   background-color: none;
 
@@ -190,7 +190,7 @@
     display: inline-block;
     width: 34px;
     height: 41px;
-    background-color: $o-m-grey-2;
+    background-color: var(--o-m-grey)-2;
     mask-image: url("../../img/htmlacademy.svg");
     mask-repeat: no-repeat;
     margin-top: -30px;
@@ -210,11 +210,11 @@
   }
 
   &:hover::after {
-    background-color: $button-green;
+    background-color: var(--button-green);
   }
 
   &:active::after {
-    background-color: $button-green;
+    background-color: var(--button-green);
     opacity: 0.3;
   }
 }

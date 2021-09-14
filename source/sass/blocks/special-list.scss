@@ -10,7 +10,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  color: $main-text;
+  color: var(--main-text);
   margin-top: 25px;
   margin-bottom: 0;
   padding-bottom: 35px;
@@ -23,7 +23,7 @@
     padding-left: 36px;
     padding-right: 37px;
     width: 338px;
-    background-color: $background-main;
+    background-color: var(--background-main);
     text-align: center;
   }
 
@@ -37,7 +37,7 @@
 .special-list__header::after {
   content: "";
   position: absolute;
-  background-color: $button-green;
+  background-color: var(--button-green);
   width: 53px;
   height: 2px;
   right: -20px;

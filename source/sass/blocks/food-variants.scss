@@ -15,7 +15,7 @@
 
 .food-variants__item {
   height: auto;
-  background-color: $basic-grey;
+  background-color: var(--basic-grey);
   box-sizing: border-box;
   padding: 30px 20px;
 
@@ -107,7 +107,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
-  color: $black;
+  color: var(--black);
   text-transform: uppercase;
   text-decoration: none;
 
@@ -126,7 +126,7 @@
     display: inline-block;
     width: 24px;
     height: 12px;
-    background-color: $black;
+    background-color: var(--black);
     mask-image: url("../../img/icon_arrow.svg");
     mask-repeat: no-repeat;
     margin-left: 20px;

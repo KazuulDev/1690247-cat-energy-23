@@ -46,9 +46,9 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  color: $black;
+  color: var(--black);
   text-transform: uppercase;
-  background-color: $section-grey;
+  background-color: var(--section-grey);
 }
 
 .example__scale {
@@ -58,8 +58,8 @@
   padding: 4px 6px;
   border: none;
   border-radius: 6px;
-  box-shadow: inset 0 0 0 1px  $scale-grey;
-  background-color: $background-main;
+  box-shadow: inset 0 0 0 1px  var(--scale-grey);
+  background-color: var(--background-main);
 }
 
 .example__thumb {
@@ -69,7 +69,7 @@
   height: 6px;
   border-radius: 6px;
   margin-left: calc((1 - var(--curtain-value)) * (var(--scale-size) - var(--thumb-size)));
-  background-color: $shape;
+  background-color: var(--shape);
 }
 
 @media (min-width: $tablet-width) {
@@ -112,7 +112,7 @@
   .example__proof-key {
     font-size: 14px;
     line-height: 14px;
-    background-color: $background-main;
+    background-color: var(--background-main);
     width: auto;
     top: 61px;
     padding: 0 8px;
@@ -147,11 +147,11 @@
   .example__button {
     font-size: 20px;
     line-height: 30px;
-    border-bottom: 1px dotted $black;
+    border-bottom: 1px dotted var(--black);
     padding: 0;
 
     &:hover {
-      border-bottom: 1px solid ($black 0.4);
+      border-bottom: 1px solid (var(--black) 0.4);
     }
 
     &:active {
@@ -167,7 +167,7 @@
     --scale-size: 428px;
     height: 6px;
     padding: 0;
-    background-color: $progress-bar;
+    background-color: var(--progress-bar);
     margin: 0 25px;
   }
 
@@ -179,31 +179,31 @@
     place-items: center;
     width: var(--thumb-size);
     height: var(--thumb-size);
-    border: 1px solid $progress-bar;
+    border: 1px solid var(--progress-bar);
     border-radius: 50%;
-    box-shadow: 0 1px 3px 0 $shadow;
-    background-color: $background-main;
+    box-shadow: 0 1px 3px 0 var(--shadow);
+    background-color: var(--background-main);
     cursor: grab;
 
     &:hover {
-      box-shadow: 0 2px 4px 0 $shadow-hover;
+      box-shadow: 0 2px 4px 0 var(--shadow-hover);
     }
 
     &:active {
-      box-shadow: 0 3px 5px 0 $shadow-active;
-      border: 1px solid $shape;
+      box-shadow: 0 3px 5px 0 var(--shadow-active);
+      border: 1px solid var(--shape);
       cursor: grabbing;
     }
 
     &:focus {
-      outline: 2px solid $special-grey;
+      outline: 2px solid var(--special-grey);
     }
 
     &::before {
       content: "";
       width: 8px;
       height: 8px;
-      background-color: $shape;
+      background-color: var(--shape);
       border-radius: 100%;
     }
   }
@@ -214,7 +214,7 @@
 
   .example {
     position: relative;
-    background-image: linear-gradient($background-main $bg, $basic-grey $bg);
+    background-image: linear-gradient(var(--background-main) $bg, var(--basic-grey) $bg);
   }
 
   .example__title {
@@ -242,7 +242,7 @@
   }
 
   .example__proof-key {
-    background-color: $basic-grey;
+    background-color: var(--basic-grey);
   }
 
   .example__conclusion-key {
@@ -288,8 +288,8 @@
       top: 193px;
       width: 100%;
       height: calc(100% - 193px);
-      background-color: $background-main;
-      box-shadow: 200px 200px 0 200px $section-grey;
+      background-color: var(--background-main);
+      box-shadow: 200px 200px 0 200px var(--section-grey);
     }
   }
 
@@ -301,6 +301,6 @@
   }
 
   .example__button {
-    background-color: $section-grey;
+    background-color: var(--section-grey);
   }
 }
