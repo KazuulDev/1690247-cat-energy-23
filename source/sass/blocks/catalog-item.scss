@@ -67,6 +67,8 @@
 }
 
 .catalog-item__img {
+  object-fit: contain;
+
   @media (min-width: $tablet-width) {
     width: 168px;
     height: 200px;

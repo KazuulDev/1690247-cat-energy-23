@@ -47,7 +47,14 @@
       <div class="page__leveler promo__cat">
         <h1 class="promo__header-text">Функциональное питание для котов</h1>
         <p class="promo__paragraph-text">Занялся собой? Займись котом!</p>
-        <img class="promo__img" src="./img/index-can.png" alt="Банка жраки" height="270" width="280">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/index-can-desktop.webp, img/index-can-desktop@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet.webp, img/index-can-tablet@2x.webp 2x" type="image/webp">
+          <source srcset="img/index-can.webp, img/index-can@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 1280px)" srcset="img/index-can-desktop.png, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet.png, img/index-can-tablet@2x.png 2x">
+          <img src="img/index-can.png" srcset="img/index-can@2x.png 2x" width="280" height="270">
+        </picture>
         <a class="promo__button page__button" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -153,14 +160,18 @@
     <section class="social-footer page__leveler">
       <h2 class="page__visually-hidden">Мы в социальных сетях:</h2>
       <a class="social-footer__logo-img cat-logo" href="#nowhere">
-        <img src="./img/footer-logo.svg" alt="Кэт энерджи">
+        <img class="" src="img/logo.svg#logotype" alt="Логотип Кэт Энерджи" width="101" height="18">
       </a>
       <div class="social-footer__wrapper">
-        <a class="social-footer__link social-footer__vk-logo" href="vk.com"><span class="page__visually-hidden">Мы в Вконткте</span></a>
-        <a class="social-footer__link social-footer__insta-logo" href="instagramm.com"><span
-            class="page__visually-hidden">Мы в Инстаграме</span></a>
-        <a class="social-footer__link social-footer__face-logo" href="facebook.com"><span
-            class="page__visually-hidden">Мы в Фейсбуке</span></a>
+        <a class="social-footer__link social-footer__vk-logo" href="vk.com">
+          <span class="page__visually-hidden">Мы в Вконткте</span>
+        </a>
+        <a class="social-footer__link social-footer__insta-logo" href="instagramm.com">
+          <span class="page__visually-hidden">Мы в Инстаграме</span>
+        </a>
+        <a class="social-footer__link social-footer__face-logo" href="facebook.com">
+          <span class="page__visually-hidden">Мы в Фейсбуке</span>
+        </a>
       </div>
       <div class="social-footer__html-academy-wrapper">
         <a class="social-footer__html-academy-logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
