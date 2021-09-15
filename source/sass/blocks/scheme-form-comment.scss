@@ -9,6 +9,13 @@
     background-color: var(--background-main);
   }
 
+  @media (min-width: $desktop-width) {
+    margin-left: -38px;
+    padding-left: 38px;
+    padding-right: 41px;
+    background-color: var(--background-main);
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -23,6 +30,11 @@
       z-index: -1;
       top: 21px;
       right: -478px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+      right: -1109px;
     }
   }
 }
@@ -41,6 +53,13 @@
     height: 174px;
     padding-left: 17px;
     padding-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-left: 0;
+    padding-left: 18px;
+    padding-top: 10px;
   }
 }
 
