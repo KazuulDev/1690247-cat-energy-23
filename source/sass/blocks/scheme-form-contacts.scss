@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 75px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 47px;
+  }
 }
 
 
@@ -20,6 +24,10 @@
     padding-left: 39px;
     background-color: var(--background-main);
     margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -39px;
   }
 
   &::after {
@@ -37,6 +45,11 @@
       right: -145px;
       top: 22px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+      right: -777px;
+    }
   }
 }
 
@@ -46,6 +59,11 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    width: 569px;
   }
 }
 
@@ -58,6 +76,10 @@
     margin-top: 9px;
     height: 52px;
     margin-right: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }
 
@@ -80,6 +102,10 @@
       top: 8px;
       left: 594px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: 531px;
+    }
   }
 }
 
@@ -95,7 +121,7 @@
 }
 
 .scheme-form-contacts__tel-input {
-  margin-left: 10px;
+  margin-left: 13px;
   padding-left: 15px;
   margin-bottom: 11px;
 
@@ -123,7 +149,7 @@
 
     @media (min-width: $tablet-width) {
       top: 6px;
-      left: 597px;
+      left: 537px;
     }
   }
 }

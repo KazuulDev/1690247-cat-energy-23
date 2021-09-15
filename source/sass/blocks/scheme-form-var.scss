@@ -32,6 +32,15 @@
     gap: 23px;
     padding-bottom: 29px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+    margin-right: 0;
+    margin-left: 81px;
+    padding-bottom: 0;
+    width: 568px;
+    height: 164px;
+  }
 }
 
 .scheme-form-var::after {

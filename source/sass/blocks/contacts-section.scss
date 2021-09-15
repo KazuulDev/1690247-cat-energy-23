@@ -33,24 +33,24 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 20px;
   text-transform: uppercase;
   color: var(--black-secondary);
   margin: 0;
   display: block;
-  width: 50%;
+  width: 44%;
   box-sizing: border-box;
-  padding-top: 29px;
-  padding-left: 20px;
+  padding-top: 28px;
+  padding-left: 0;
   padding-bottom: 26px;
   white-space: nowrap;
 
   @media (min-width: $tablet-width) {
     width: 171px;
     font-size: 20px;
-    line-height: 24px;
-    padding-top: 66px;
-    padding-left: 71px;
+    line-height: 26px;
+    padding-top: 62px;
+    padding-left: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,7 +70,6 @@
   width: 50%;
   margin: 0;
   padding-top: 28px;
-  padding-left: 2px;
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
@@ -78,8 +77,8 @@
     line-height: 20px;
     width: 159px;
     text-align: end;
-    padding-right: 74px;
-    padding-top: 64px;
+    padding-right: 102px;
+    padding-top: 63px;
   }
 
   span {

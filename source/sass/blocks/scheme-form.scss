@@ -5,10 +5,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
+    padding-bottom: 61px;
   }
 }
 
@@ -21,6 +18,13 @@
   margin-top: 21px;
   text-align: center;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 61px;
+    margin-top: 35px;
+  }
 }
 
 .scheme-form__text {
@@ -35,6 +39,30 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.scheme-form__button {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--background-main);
+  text-decoration: none;
+  background-color: var(--button-green);
+  border: none;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    width: 282px;
+    margin-left: 41px;
+    margin-top: 19px;
+    font-size: 20px;
   }
 }
 
