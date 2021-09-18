@@ -14,6 +14,10 @@
   padding-top: 27px;
 }
 
+.example__wrapper {
+  margin-left: -15px;
+}
+
 .example__text {
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -179,6 +183,10 @@
     grid-template-rows: 1fr;
     column-gap: 42px;
     margin-bottom: 86px;
+  }
+
+  .example__wrapper {
+    margin-left: 0;
   }
 
   .example {
