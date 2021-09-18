@@ -6,10 +6,13 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    margin-top: -5px;
+    gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    gap: 80px;
   }
 }
 
@@ -17,21 +20,40 @@
   height: auto;
   background-color: var(--basic-grey);
   box-sizing: border-box;
-  padding: 30px 20px;
+  padding: 30px 20px 18px;
 
   @media (min-width: $tablet-width) {
     padding-top: 77px;
     padding-left: 52px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding-right: 30px;
   }
 }
 
 .food-variants__description {
-  padding-bottom: 23px;
+  padding-bottom: 22px;
+  margin-bottom: 19px;
   border-bottom: 1px solid rgba(217, 217, 217, 1);
+  white-space: break-word;
+
+  & br {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -23px;
   }
 }
 
@@ -49,15 +71,21 @@
   margin-left: -1px;
 
   @media (min-width: $tablet-width) {
+    margin-right: 42px;
+    margin-left: 45px;
+    margin-top: 3px;
     float: right;
-    width: 200px;
+    width: 211px;
     height: 211px;
   }
 
   @media (min-width: $desktop-width) {
     float: left;
-    width: 100px;
+    width: 160px;
     height: 106px;
+    margin-top: -36px;
+    margin-left: -58px;
+    margin-right: 60px;
   }
 }
 
@@ -66,23 +94,30 @@
   display: block;
   float: left;
   width: 67px;
-  height: 50px;
+  height: 57px;
   background-image: url("../../icons/sprite.svg#pro-img");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -5px;
+  margin-top: -13px;
   margin-right: 11px;
+  margin-left: -8px;
 
   @media (min-width: $tablet-width) {
+    margin-top: -13px;
+    margin-right: 10px;
+    margin-left: 15px;
     float: right;
     width: 268px;
-    height: 200px;
+    height: 230px;
   }
 
   @media (min-width: $desktop-width) {
     float: left;
-    width: 134px;
+    width: 200px;
     height: 100px;
+    margin-left: -54px;
+    margin-top: -30px;
+    margin-right: 15px;
   }
 }
 
@@ -100,6 +135,11 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
   }
 }
 
@@ -112,8 +152,10 @@
   color: var(--black);
   text-transform: uppercase;
   text-decoration: none;
+  position: relative;
 
   &::after {
+    position: absolute;
     content: "";
     display: inline-block;
     width: 32px;
@@ -121,9 +163,20 @@
     background-color: var(--black);
     mask-image: url("../../icons/sprite.svg#arrow");
     mask-repeat: no-repeat;
-    margin-left: 20px;
-    mask-position: -4px;
+    margin-left: 17px;
+    top: 5px;
+    mask-position: -8px;
     mask-size: cover;
+
+    @media (min-width: $tablet-width) {
+      top: 9px;
+      margin-left: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 8px;
+      margin-left: 28px;
+    }
   }
 
   &:active {
@@ -138,5 +191,9 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }

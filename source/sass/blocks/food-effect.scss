@@ -2,26 +2,55 @@
   background: var(--section-grey);
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, var(--background-main) 462px, var(--section-grey) 0);
+    border-top: 1px solid var(--special-light-grey);
+    margin-bottom: -1px;
+    background: linear-gradient(to bottom, var(--background-main) 619px, var(--section-grey) 0);
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top: none;
+    background: none;
+  }
+}
+
+.food-effect__example-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1040px;
+    background: linear-gradient(to bottom, var(--background-main) 619px, var(--section-grey) 0);
   }
 }
 
 .food-effect__header {
+  margin-top: 0;
   padding-top: 27px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 23px;
+    padding-bottom: 97px;
+  }
 }
 
 .food-effect__numeral-wrapper {
   border: 1px solid var(--dl-border);
   border-radius: 4px;
   display: flex;
-  width: 124px;
-  height: 56px;
+  width: 122px;
+  height: 54px;
   flex-direction: column-reverse;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    width: 162px;
-    height: 72px;
+    width: 160px;
+    height: 71px;
     font-size: 30px;
     line-height: 37px;
     margin-top: 0;
@@ -33,10 +62,16 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     justify-content: start;
     gap: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 440px;
   }
 }
 
@@ -51,11 +86,16 @@
   background-color: var(--section-grey);
   z-index: 1;
   margin: 0;
-  margin-bottom: -10px;
+  margin-bottom: -17px;
   width: 77px;
 
   @media (min-width: $tablet-width) {
     background-color: var(--background-main);
+    width: auto;
+    margin-bottom: -5px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0 8px;
   }
 }
 
@@ -67,8 +107,15 @@
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 12px;
+  }
 }
 
 .food-effect__cost {
@@ -80,18 +127,32 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  padding-left: 44px;
+  padding-left: 46px;
   margin: 0;
+  margin-top: 8px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
     text-align: end;
-    padding-left: 120px;
+    padding-left: 124px;
+    padding-right: 0;
+    margin-top: 6px;
+    margin-right: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    margin-top: -18px;
+
+    & span {
+      margin-left: 64px;
+    }
   }
 }
 
-.food-effect br {
+.food-effect__cost br {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -100,5 +161,30 @@
 
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.food-effect__description {
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+
+  & br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 431px;
+    margin-bottom: 68px;
   }
 }
