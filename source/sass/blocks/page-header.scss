@@ -57,8 +57,10 @@
 .page-header__logo {
   width: 102px;
   height: 18px;
+  margin-top: 5px;
 
   @media (min-width: $desktop-width) {
+    margin-top: -3px;
     width: 118px;
     height: 22px;
   }

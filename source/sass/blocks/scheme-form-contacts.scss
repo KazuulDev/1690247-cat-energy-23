@@ -128,14 +128,15 @@
   margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 16px;
+    margin-left: 19px;
     padding-left: 19px;
   }
 }
 
 .scheme-form-contacts__tel {
   position: relative;
-  margin-left: -3px;
+  margin-left: 0;
+  margin-right: -3px;
 
   &::after {
     content: "";
@@ -151,7 +152,11 @@
 
     @media (min-width: $tablet-width) {
       top: 6px;
-      left: 537px;
+      left: 597px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: -3px;
   }
 }
