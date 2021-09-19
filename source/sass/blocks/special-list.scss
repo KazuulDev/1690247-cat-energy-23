@@ -5,6 +5,7 @@
 }
 
 .special-list__header {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -28,7 +29,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -35px;
+    margin-top: 66px;
+    margin-left: -36px;
     padding-left: 36px;
     padding-right: 37px;
   }
@@ -41,12 +43,12 @@
   width: 53px;
   height: 2px;
   right: -20px;
-  bottom: -10px;
+  bottom: 42px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    top: 90px;
-    right: -30px;
+    top: 21px;
+    right: -327px;
     z-index: -1;
   }
 

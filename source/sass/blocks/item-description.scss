@@ -21,15 +21,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 166px;
+    width: 169px;
+    margin-left: 6px;
+    padding-bottom: 8px;
   }
 }
 
 .item-description {
-  padding-bottom: 9px;
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 14px;
 
   @media (min-width: $desktop-width) {
-    margin-top: 11px;
-    padding-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 12px;
   }
 }

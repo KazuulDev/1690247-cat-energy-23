@@ -1,6 +1,6 @@
 .promo-present {
   margin: 35px 0;
-  background-image: url("./../../img/promo-present@1x.jpg");
+  background-image: url("./../../img/promo-present.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 290px;
@@ -11,10 +11,10 @@
 
   @media (min-width: $tablet-width) {
     height: 200px;
-    background-image: url("./../../img/promo-present_tablet@1x.jpg");
+    background-image: url("./../../img/promo-present_tablet.jpg");
     margin-top: 68px;
     justify-content: right;
-    margin-bottom: 75px;
+    margin-bottom: 78px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("./../../img/promo-present_tablet@2x.jpg");
@@ -24,13 +24,13 @@
   @media (min-width: $desktop-width) {
     height: 289px;
     width: 245px;
-    background-image: url("./../../img/promo-present_desktop@1x.jpg");
-    margin-top: 185px;
+    background-image: url("./../../img/promo-present_desktop.jpg");
+    margin-top: 183px;
     margin-left: 79px;
     justify-content: center;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("./../../img/promo-present_tablet@2x.jpg");
+      background-image: url("./../../img/promo-present_desktop@2x.jpg");
     }
   }
 }
@@ -42,7 +42,8 @@
   width: 78px;
   height: 80px;
   background-size: cover;
-  background-image: url("./../../img/promo-icon.svg");
+  background-image: url("./../../icons/sprite.svg#promo-icon");
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     left: 80px;

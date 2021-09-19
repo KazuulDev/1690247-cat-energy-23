@@ -1,6 +1,8 @@
-.catalog-list {
+.catalog-list__primary-list {
+  position: relative;
   display: grid;
   grid-template-rows: auto;
+  row-gap: 19px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -11,8 +13,24 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
-    row-gap: 59px;
-    margin-left: 1px;
+    row-gap: 62px;
+    margin-left: 0;
+  }
+}
+
+
+.catalog-list__header {
+  margin-top: 25px;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 48px;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 53px;
+    margin-bottom: 86px;
   }
 }
 

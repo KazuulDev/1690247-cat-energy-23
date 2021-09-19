@@ -1,7 +1,9 @@
 .page-header {
   position: relative;
+  border-bottom: 1px solid rgba(217, 217, 217, 1);
 
   @media (min-width: $tablet-width) {
+    border-bottom: none;
     margin-top: 16px;
     display: flex;
     justify-content: space-between;
@@ -9,7 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 40px;
+    margin-top: 42px;
   }
 }
 
