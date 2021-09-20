@@ -126,9 +126,10 @@
 
 .catalog-item__add-to-cart {
   grid-area: catalog-item__add-to-cart;
+  box-sizing: border-box;
   margin-bottom: 16px;
   height: 40px;
-  width: 100%;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     margin-top: 19px;
