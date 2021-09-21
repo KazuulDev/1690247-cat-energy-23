@@ -46,7 +46,7 @@
   line-height: 12px;
   color: var(--special-grey);
   position: absolute;
-  top: 46px;
+  bottom: -12px;
   text-align: center;
   background-color: var(--background-main);
   width: 59px;
@@ -61,6 +61,7 @@
   line-height: 24px;
   color: var(--black);
   text-transform: uppercase;
+  text-align: center;
   margin: 0;
   padding-top: 14px;
   padding-left: 2px;
@@ -225,7 +226,6 @@
     line-height: 14px;
     background-color: var(--background-main);
     width: auto;
-    top: 61px;
     padding: 0 8px;
   }
 
@@ -325,7 +325,7 @@
 
   .example {
     position: relative;
-    background-image: linear-gradient(var(--background-main) $bg, var(--basic-grey) $bg);
+    background-image: linear-gradient(var(--background-main) $bg, var(--section-grey) $bg);
   }
 
   .example__title {
