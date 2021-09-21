@@ -16,6 +16,7 @@
 .promo__cat {
   @media (min-width: $tablet-width) {
     padding-left: 88px;
+    box-sizing: border-box;
   }
 }
 
