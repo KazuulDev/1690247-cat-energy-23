@@ -107,7 +107,6 @@
 .scheme-form-var__radio:hover + .scheme-form-var__label-text::before,
 .scheme-form-var__radio:focus + .scheme-form-var__label-text::before {
   background-image: url("./../../img/radiobutton_hover.svg");
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .scheme-form-var__radio:disabled + .scheme-form-var__label-text::before {

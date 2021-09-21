@@ -51,17 +51,17 @@
       <div class="cat-info">
         <fieldset class="scheme-form-cat">
           <div>
-            <p class="scheme-form__text scheme-form-cat__name">Имя:*</p>
-            <input class="scheme-form-cat__name-input scheme-form__text" type="text" name="name" value="Барсик" required>
+            <label class="scheme-form__text scheme-form-cat__name" for="name-id">Имя:*</label>
+            <input class="scheme-form-cat__name-input scheme-form__text" type="text" name="name" placeholder="Барсик" id="name-id" required>
           </div>
           <div>
-            <p class="scheme-form__text scheme-form-cat__weight">Вес (Кг):* </p>
-            <input class="scheme-form-cat__weight-input scheme-form__text" type="number" name="weight" value="7"
+            <label class="scheme-form__text scheme-form-cat__weight" for="weight-id">Вес (Кг):* </label>
+            <input class="scheme-form-cat__weight-input scheme-form__text" type="number" name="weight" placeholder="7" id="weight-id"
               required>
           </div>
           <div>
-            <p class="scheme-form__text scheme-form-cat__age">Возраст (лет):</p>
-            <input class="scheme-form-cat__age-input scheme-form__text" type="number" name="age" value="7">
+            <label class="scheme-form__text scheme-form-cat__age" for="age-id">Возраст (лет):</label>
+            <input class="scheme-form-cat__age-input scheme-form__text" type="number" name="age" placeholder="7" id="age-id">
           </div>
         </fieldset>
         <fieldset class="scheme-form-var">
@@ -76,12 +76,12 @@
       <fieldset class="scheme-form-contacts">
           <legend class="scheme-form-contacts__legend legend-text">Контактные данные (владельца кота)</legend>
             <div>
-              <p class="scheme-form-contacts__email scheme-form__text">E-mail:*</p>
-              <input class="scheme-form-contacts__email-input scheme-form__text" type="email" name="email" value="kuklachev@gmail.com" required>
+              <label class="scheme-form-contacts__email scheme-form__text" for="email-id">E-mail:*</label>
+              <input class="scheme-form-contacts__email-input scheme-form__text" type="email" name="email" placeholder="kuklachev@gmail.com" id="email-id" required>
             </div>
               <div>
-                <p class="scheme-form-contacts__tel scheme-form__text">Телефон:*</p>
-                <input class="scheme-form-contacts__tel-input scheme-form__text" type="tel" name="phone" value="8 (960) 900-60-90">
+                <label class="scheme-form-contacts__tel scheme-form__text" for="phone-id">Телефон:*</label>
+                <input class="scheme-form-contacts__tel-input scheme-form__text" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="phone-id">
               </div>
             </fieldset>
       <fieldset class="scheme-form-comment">
