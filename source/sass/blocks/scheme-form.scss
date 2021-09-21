@@ -67,6 +67,16 @@
   text-align: center;
   text-transform: uppercase;
 
+  &:hover,
+  :focus {
+    background-color: rgba(94, 170, 47, 1);
+  }
+
+  &:active {
+    background-color: rgba(94, 170, 47, 1);
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     height: 52px;
     width: 282px;
