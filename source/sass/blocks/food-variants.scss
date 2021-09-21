@@ -17,7 +17,6 @@
 }
 
 .food-variants__item {
-  height: auto;
   background-color: var(--basic-grey);
   box-sizing: border-box;
   padding: 30px 20px 18px;
@@ -26,13 +25,11 @@
     padding-top: 77px;
     padding-left: 52px;
     padding-bottom: 57px;
-    height: 372px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
     padding-right: 30px;
-    height: 374px;
   }
 }
 
