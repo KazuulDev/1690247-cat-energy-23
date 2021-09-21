@@ -7,13 +7,15 @@
     position: relative;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-left: 88px;
-  }
-
   @media (min-width: $desktop-width) {
     padding-left: initial;
     padding-bottom: 83px;
+  }
+}
+
+.promo__cat {
+  @media (min-width: $tablet-width) {
+    padding-left: 88px;
   }
 }
 
