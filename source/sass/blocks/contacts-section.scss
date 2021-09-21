@@ -1,6 +1,18 @@
 .contacts-section {
   background-color: var(--basic-grey);
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+  }
+}
+
+.contacts-section__container {
+  @media (min-width: $desktop-width) {
+    grid-area: 1 / 1 / 2 / 2;
+    padding-top: 95px;
+    padding-bottom: 104px;
+  }
 }
 
 .contacts-section__wrapper {
@@ -15,17 +27,20 @@
     margin-top: -2px;
     display: flex;
     width: 768px;
-    height: 201px;
     align-content: space-around;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    height: 201px;
-    margin-bottom: -296px;
     background-color: var(--background-main);
     margin-left: 0;
+  }
+}
+
+.contacts-section__map {
+  @media (min-width: $desktop-width) {
+    grid-area: 1 / 1 / 2 / 2;
   }
 }
 
