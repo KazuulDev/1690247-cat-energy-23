@@ -172,6 +172,8 @@
 }
 
 .social-footer__html-academy-logo {
+  display: flex;
+  gap: 138px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -182,7 +184,7 @@
   background-color: none;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    gap: 18px;
   }
 
   &::after {
@@ -194,10 +196,9 @@
     background-color: var(--o-m-grey-2);
     mask-image: url("../../icons/sprite.svg#htmlacademy");
     mask-repeat: no-repeat;
-    margin-top: -30px;
-    margin-left: 248px;
     mask-size: cover;
     mask-position: center;
+    margin-top: -10px;
   }
 
   &:hover::after {
@@ -215,31 +216,6 @@
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    margin-left: -33px;
-    margin-top: -8px;
-    width: 250px;
-    height: 59px;
-    mask-image: url("../../icons/sprite.svg#htmlacademy-tablet");
-    mask-repeat: no-repeat;
-    mask-size: cover;
-    background-color: var(--o-m-grey-2);
-
-    &:hover {
-      background-color: var(--button-green);
-    }
-
-    &:active {
-      background-color: var(--button-green);
-      opacity: 0.3;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 53px;
-    margin-top: 20px;
-    mask-position: center;
-    width: 163px;
-    height: 34px;
+    margin-right: -3px;
   }
 }
