@@ -99,18 +99,18 @@
 }
 
 
-.food-advantages--eco::before {
+.food-advantages__item--eco::before {
   background-image: url("../../icons/sprite.svg#eco");
 }
 
-.food-advantages--chemistry::before {
+.food-advantages__item--chemistry::before {
   background-image: url("../../icons/sprite.svg#chemistry");
 }
 
-.food-advantages--food::before {
+.food-advantages__item--food::before {
   background-image: url("../../icons/sprite.svg#food");
 }
 
-.food-advantages--weight::before {
+.food-advantages__item--weight::before {
   background-image: url("../../icons/sprite.svg#weight");
 }
