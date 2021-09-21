@@ -59,7 +59,7 @@
   }
 }
 
-.food-variants__img--slim::before {
+.food-variants__item--slim::before {
   content: "";
   display: block;
   float: left;
@@ -92,7 +92,7 @@
   }
 }
 
-.food-variants__img--pro::before {
+.food-variants__item--pro::before {
   content: "";
   display: block;
   float: left;
