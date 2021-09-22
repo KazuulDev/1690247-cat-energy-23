@@ -46,7 +46,7 @@
   line-height: 12px;
   color: var(--special-grey);
   position: absolute;
-  bottom: -12px;
+  bottom: -15px;
   text-align: center;
   background-color: var(--background-main);
   width: 59px;
@@ -339,8 +339,6 @@
   .example__position {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-left: 110px;
-    padding-right: 110px;
     box-sizing: border-box;
   }
 

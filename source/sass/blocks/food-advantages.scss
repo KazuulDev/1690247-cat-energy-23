@@ -19,7 +19,7 @@
   padding: 0;
   gap: 26px;
   counter-reset: myCounter;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     list-style: number;
@@ -28,13 +28,13 @@
     column-gap: 149px;
     row-gap: 134px;
     margin-top: 73px;
-    margin-bottom: 95px;
+    margin-bottom: 90px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
-    margin-bottom: 72px;
+    margin-bottom: 67px;
   }
 }
 
