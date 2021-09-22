@@ -148,6 +148,11 @@
 .promo__img {
   padding-top: 0;
 
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    margin-bottom: 4px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
@@ -175,7 +180,6 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 370px;
-    left: 119px;
     font-size: 20px;
     line-height: 20px;
     z-index: 1;
