@@ -127,3 +127,8 @@
   background-image: url("./../../img/radiobutton_checked_hover.svg");
   opacity: 0.3;
 }
+
+.scheme-form-var__radio:focus-visible + .scheme-form-var__label-text::before {
+  outline: 2px solid;
+  outline-offset: 2px;
+}

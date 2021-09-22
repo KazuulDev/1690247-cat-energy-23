@@ -133,3 +133,8 @@
   background-image: url("./../../img/checked_hover.svg");
   opacity: 0.3;
 }
+
+.scheme-form-spec__checkbox:focus-visible + .scheme-form-spec__label::before {
+  outline: 2px solid;
+  outline-offset: 2px;
+}

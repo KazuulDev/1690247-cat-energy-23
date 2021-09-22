@@ -55,12 +55,12 @@
             <input class="scheme-form-cat__name-input scheme-form__text" type="text" name="name" placeholder="Барсик" id="name-id" required>
           </div>
           <div>
-            <label class="scheme-form__text scheme-form-cat__weight" for="weight-id">Вес (Кг):* </label>
+            <label class="scheme-form__text scheme-form-cat__weight" for="weight-id">Вес (Кг):* </label>
             <input class="scheme-form-cat__weight-input scheme-form__text" type="number" name="weight" placeholder="7" id="weight-id"
               required>
           </div>
           <div>
-            <label class="scheme-form__text scheme-form-cat__age" for="age-id">Возраст (лет):</label>
+            <label class="scheme-form__text scheme-form-cat__age" for="age-id">Возраст (лет):</label>
             <input class="scheme-form-cat__age-input scheme-form__text" type="number" name="age" placeholder="7" id="age-id">
           </div>
         </fieldset>
@@ -74,34 +74,34 @@
         </fieldset>
       </div>
       <fieldset class="scheme-form-contacts">
-          <legend class="scheme-form-contacts__legend legend-text">Контактные данные (владельца кота)</legend>
-            <div>
-              <label class="scheme-form-contacts__email scheme-form__text" for="email-id">E-mail:*</label>
-              <input class="scheme-form-contacts__email-input scheme-form__text" type="email" name="email" placeholder="kuklachev@gmail.com" id="email-id" required>
-              <span></span>
-            </div>
-              <div>
-                <label class="scheme-form-contacts__tel scheme-form__text" for="phone-id">Телефон:*</label>
-                <input class="scheme-form-contacts__tel-input scheme-form__text" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="phone-id" required>
-                <span></span>
-              </div>
-            </fieldset>
+        <legend class="scheme-form-contacts__legend legend-text">Контактные данные (владельца кота)</legend>
+        <div class="scheme-form-contacts__field">
+          <label class="scheme-form-contacts__label scheme-form-contacts__label--email scheme-form__text" for="email-id">E-mail:*</label>
+          <input class="scheme-form-contacts__input scheme-form-contacts__input--email scheme-form__text" type="email" name="email" placeholder="kuklachev@gmail.com" id="email-id" required>
+          <span class="scheme-form-contacts__icon scheme-form-contacts__icon--email"></span>
+        </div>
+        <div class="scheme-form-contacts__field">
+          <label class="scheme-form-contacts__label scheme-form-contacts__label--phone scheme-form__text" for="phone-id">Телефон:*</label>
+          <input class="scheme-form-contacts__input scheme-form-contacts__input--phone scheme-form__text" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="phone-id" required>
+          <span class="scheme-form-contacts__icon scheme-form-contacts__icon--phone"></span>
+        </div>
+      </fieldset>
       <fieldset class="scheme-form-comment">
         <legend class="scheme-form-comment__legend legend-text">Комментарий</legend>
         <textarea class="scheme-form-comment__text scheme-form__text" name="comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
       </fieldset>
       <fieldset class="scheme-form-spec">
         <legend class="scheme-form-spec__legend legend-text">Дополнительно</legend>
-          <div>
-            <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="non-sugar" id="non-sugar-check">
-            <label class="scheme-form-spec__label" for="non-sugar-check">Сахарозаменитель</label>
-            <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="water" id="water-check">
-            <label class="scheme-form-spec__label" for="water-check">Питьевая вода</label>
-            <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="milk" id="milk-check">
-            <label class="scheme-form-spec__label" for="milk-check">Молоко</label>
-            <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="vitamins" id="vitamins-check">
-            <label class="scheme-form-spec__label" for="vitamins-check">Витамины</label>
-          </div>
+        <div>
+          <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="non-sugar" id="non-sugar-check">
+          <label class="scheme-form-spec__label" for="non-sugar-check">Сахарозаменитель</label>
+          <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="water" id="water-check">
+          <label class="scheme-form-spec__label" for="water-check">Питьевая вода</label>
+          <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="milk" id="milk-check">
+          <label class="scheme-form-spec__label" for="milk-check">Молоко</label>
+          <input class="scheme-form-spec__checkbox" type="checkbox" name="special" value="vitamins" id="vitamins-check">
+          <label class="scheme-form-spec__label" for="vitamins-check">Витамины</label>
+        </div>
       </fieldset>
       <div class="scheme-form__end">
         <button class="scheme-form__button" type="submit">Отправить заявку</button>
@@ -109,7 +109,7 @@
       </div>
     </form>
   </main>
- <footer class="page__footer">
+  <footer class="page__footer">
     <section class="contacts-section">
       <div class="contacts-section__container">
         <div class="contacts-section__wrapper">
@@ -118,9 +118,7 @@
         </div>
       </div>
       <div class="contacts-section__map map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716405354!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619771954735!5m2!1sru!2sru"
-          width="320" height="362" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716405354!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619771954735!5m2!1sru!2sru" width="320" height="362" loading="lazy"></iframe>
       </div>
     </section>
     <section class="social-footer page__leveler">
