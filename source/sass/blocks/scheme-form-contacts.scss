@@ -149,18 +149,24 @@
   @media (min-width: $tablet-width) {
     margin-top: -4px;
   }
+}
 
-  &::after {
+
+.scheme-form-contacts__tel-input + span {
+  position: relative;
+}
+.scheme-form-contacts__tel-input::after + span {
     content: "";
     position: absolute;
     width: 20px;
     height: 20px;
-    left: 246px;
+    left: 0;
     top: -1px;
-    background-image: url("./../../img/phone-icon.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    mask-image: url("./../../img/phone-icon.svg");
+    mask-repeat: no-repeat;
+    mask-size: cover;
     z-index: 1;
+    background-color: rgba(34, 34, 34, 1);
 
     @media (min-width: $tablet-width) {
       top: 6px;
@@ -176,4 +182,9 @@
   @media (min-width: $tablet-width) {
     margin-left: -3px;
   }
+}
+
+.scheme-form-contacts__tel-input:hover::after + span,
+:focus::after {
+  background-color: rgba(104, 183, 56, 1);
 }
