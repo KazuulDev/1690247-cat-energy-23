@@ -1,18 +1,15 @@
 .scheme-form-comment__legend {
   position: relative;
   padding-left: 0;
-  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     padding-left: 38px;
-    padding-right: 41px;
     background-color: var(--background-main);
   }
 
   @media (min-width: $desktop-width) {
     margin-left: -38px;
     padding-left: 38px;
-    padding-right: 41px;
     background-color: var(--background-main);
   }
 
@@ -22,24 +19,45 @@
     background-color: #68b738;
     width: 158px;
     height: 2px;
-    right: -178px;
-    top: 16px;
+    left: 142px;
+    top: 20px;
 
     @media (min-width: $tablet-width) {
       width: 768px;
       z-index: -1;
-      top: 21px;
-      right: -478px;
+      top: 30px;
+      left: -30px;
     }
 
     @media (min-width: $desktop-width) {
       width: 1440px;
-      right: -1109px;
+      left: -72px;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      background-color: var(--background-main);
+      width: 41px;
+      height: 2px;
+      z-index: 1;
+      top: 30px;
+      left: 218px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 41px;
+      top: 29px;
+      height: 4px;
+      right: 0;
     }
   }
 }
 
 .scheme-form-comment__text {
+  margin-top: 38px;
   padding-left: 14px;
   padding-top: 8px;
   width: 100%;
@@ -57,6 +75,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    margin-top: 74px;
     margin-left: 0;
     padding-left: 18px;
     padding-top: 10px;
