@@ -35,6 +35,13 @@
   }
 }
 
+.page__leveler-desktop {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .page__section-header {
   font-family: "Oswald", "Impact", sans-serif;
   font-style: normal;
