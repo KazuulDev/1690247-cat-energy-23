@@ -63,7 +63,7 @@
   &::after {
     content: "";
     position: absolute;
-    background-color: #68b738;
+    background-color: var(--button-green);
     width: 136px;
     height: 2px;
     right: -157px;
@@ -79,7 +79,7 @@
     @media (min-width: $desktop-width) {
       width: 1440px;
       top: 25px;
-      right: -1080px;
+      right: -1079px;
     }
   }
 }
