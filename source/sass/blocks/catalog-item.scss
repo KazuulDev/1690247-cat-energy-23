@@ -6,7 +6,7 @@
   row-gap: 13px;
   box-sizing: border-box;
   padding-top: 20px;
-  height: 190px;
+  min-height: 190px;
   grid-template-columns: 140px 140px;
   grid-template-areas:
     "catalog-item__img-wrapper catalog-item__item-description"
@@ -15,7 +15,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
     width: 324px;
-    height: 511px;
+    min-height: 511px;
     row-gap: 0;
     grid-template-columns: auto;
     grid-template-rows: 200px auto auto;
@@ -128,7 +128,7 @@
   grid-area: catalog-item__add-to-cart;
   box-sizing: border-box;
   margin-bottom: 16px;
-  height: 40px;
+  min-height: 40px;
   width: 280px;
 
   @media (min-width: $tablet-width) {
@@ -173,7 +173,7 @@
   text-transform: uppercase;
   color: var(--o-m-grey);
   width: 80px;
-  height: 41px;
+  min-height: 41px;
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
